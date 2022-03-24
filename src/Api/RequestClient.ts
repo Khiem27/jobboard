@@ -5,4 +5,13 @@ export const RequestClient = axios.create({
   headers: { "Content-Type": "application/json" },
 });
 
+RequestClient.interceptors.response.use(
+  (res) => {
+    return res;
+  },
+  (e: any) => {
+    return Promise.reject(e.response.data);
+  }
+);
+
 export default RequestClient;

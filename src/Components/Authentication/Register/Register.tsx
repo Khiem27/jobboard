@@ -1,6 +1,6 @@
 import { yupResolver } from "@hookform/resolvers/yup";
 import { unwrapResult } from "@reduxjs/toolkit";
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
@@ -56,20 +56,21 @@ function Register() {
   });
   const dispatch = useDispatch();
 
+  const [alert, setAlert] = useState(false);
+
   const onSubmit = async (data: UserInputs) => {
-    const userData: UserData = {
-      username: data.registerUserName,
-      email: data.registerEmail,
-      password: data.registerPassword,
-    };
-    const action = RegisterSliceAction(userData);
-    const resultAction: any = await dispatch(action);
-    const originalPromiseResult = unwrapResult(resultAction);
     try {
+      const userData: UserData = {
+        username: data.registerUserName,
+        email: data.registerEmail,
+        password: data.registerPassword,
+      };
+      const resultAction: any = await dispatch(RegisterSliceAction(userData));
+      const originalPromiseResult = unwrapResult(resultAction);
       console.log(originalPromiseResult);
-      // window.location.href = "/login";
+      window.location.href = "/login";
     } catch (error: any) {
-      console.log(originalPromiseResult);
+      setAlert(error.message);
     }
   };
   return (
@@ -113,6 +114,11 @@ function Register() {
                   <div style={{ fontSize: "12px" }} className="text-danger">
                     {errors.registerEmail?.message}
                   </div>
+                  {alert && (
+                    <div style={{ fontSize: "12px" }} className="text-danger">
+                      {alert}
+                    </div>
+                  )}
                 </div>
 
                 <div className="form-group">

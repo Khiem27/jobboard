@@ -1,8 +1,12 @@
 import { yupResolver } from "@hookform/resolvers/yup";
-import React from "react";
+import { unwrapResult } from "@reduxjs/toolkit";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import * as yup from "yup";
+import { UserDataLogin } from "../../shared/types";
+import { LoginSliceAction } from "./LoginSlice";
 Login.propTypes = {};
 
 type Inputs = {
@@ -10,17 +14,8 @@ type Inputs = {
   registerPassword: string;
 };
 
-interface UserData {
-  userEmail: string;
-  userPass: string;
-}
-
 const schema = yup
   .object({
-    registerUserName: yup
-      .string()
-      .required("Please enter user name.")
-      .min(4, "Invalid username (more than 4 characters)"),
     registerEmail: yup
       .string()
       .required("Please enter email.")
@@ -39,10 +34,6 @@ const schema = yup
           }
         }
       ),
-    registerRetypePassword: yup
-      .string()
-      .required("Please enter retype password.")
-      .oneOf([yup.ref("registerPassword")], "The password is not the same"),
   })
   .required();
 
@@ -54,7 +45,24 @@ function Login() {
   } = useForm<Inputs>({
     resolver: yupResolver(schema),
   });
-  const onSubmit = (data: Inputs) => console.log(data);
+  const dispatch = useDispatch();
+  const [alert, setAlert] = useState(false);
+
+  const onSubmit = async (data: Inputs) => {
+    try {
+      const userDataLogin: UserDataLogin = {
+        email: data.registerEmail,
+        password: data.registerPassword,
+      };
+
+      const resultAction: any = await dispatch(LoginSliceAction(userDataLogin));
+      const originalPromiseResult = unwrapResult(resultAction);
+      console.log(originalPromiseResult);
+      window.location.href = "/";
+    } catch (error: any) {
+      setAlert(error.message);
+    }
+  };
   return (
     <div className="row">
       <div className="col-lg-6 col-md-6 d-flex">
@@ -136,6 +144,11 @@ function Login() {
                 <div style={{ fontSize: "12px" }} className="text-danger">
                   {errors.registerEmail?.message}
                 </div>
+                {alert && (
+                  <div style={{ fontSize: "12px" }} className="text-danger">
+                    {alert}
+                  </div>
+                )}
               </div>
               <div className="form-group">
                 <label>Password *</label>
