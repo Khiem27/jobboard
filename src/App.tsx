@@ -13,12 +13,17 @@ import "./Css/templete.css";
 import "./Css/themify-icons.css";
 import LoginLayout from "./Layout/Authentication/Register/LoginLayout";
 import RegisterLayout from "./Layout/Authentication/Register/RegisterLayout";
+import MyProfileLayout from "./Layout/ForCandidates/MyProfile/MyProfileLayout";
+import Home from "./Layout/Home/Home";
+
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/register" element={<RegisterLayout />} />
         <Route path="/login" element={<LoginLayout />} />
+        <Route path="/" element={<Home />} />
+        <Route path="my-profile" element={<MyProfileLayout />} />
       </Routes>
     </BrowserRouter>
   );

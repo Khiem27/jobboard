@@ -7,7 +7,7 @@ export const LoginSliceAction = createAsyncThunk(
   async (payload: UserDataLogin) => {
     const userDataLogin: UserDataLogin = payload;
     const response = await UserApi.login(userDataLogin);
-    return response.data.message;
+    return response.data;
   }
 );
 

@@ -57,12 +57,13 @@ function Login() {
 
       const resultAction: any = await dispatch(LoginSliceAction(userDataLogin));
       const originalPromiseResult = unwrapResult(resultAction);
-      console.log(originalPromiseResult);
+      localStorage.setItem("user", JSON.stringify(originalPromiseResult));
       window.location.href = "/";
     } catch (error: any) {
       setAlert(error.message);
     }
   };
+
   return (
     <div className="row">
       <div className="col-lg-6 col-md-6 d-flex">
