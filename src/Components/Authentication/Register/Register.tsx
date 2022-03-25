@@ -59,6 +59,8 @@ function Register() {
   const [alert, setAlert] = useState(false);
 
   const onSubmit = async (data: UserInputs) => {
+    console.log(data);
+
     try {
       const userData: UserData = {
         username: data.registerUserName,

@@ -49,12 +49,13 @@ function Login() {
   const [alert, setAlert] = useState(false);
 
   const onSubmit = async (data: Inputs) => {
+    console.log(data);
+
     try {
       const userDataLogin: UserDataLogin = {
         email: data.registerEmail,
         password: data.registerPassword,
       };
-
       const resultAction: any = await dispatch(LoginSliceAction(userDataLogin));
       const originalPromiseResult = unwrapResult(resultAction);
       localStorage.setItem("user", JSON.stringify(originalPromiseResult));
