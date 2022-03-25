@@ -1,5 +1,4 @@
 import { yupResolver } from "@hookform/resolvers/yup";
-import { unwrapResult } from "@reduxjs/toolkit";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
@@ -59,9 +58,7 @@ function Login() {
 
       const resultAction: any = await dispatch(LoginSliceAction(userDataLogin));
       console.log(2);
-      const originalPromiseResult = unwrapResult(resultAction);
       console.log(3);
-      localStorage.setItem("user", JSON.stringify(originalPromiseResult));
       // window.location.href = "/";
     } catch (error: any) {
       setAlert(error.message);

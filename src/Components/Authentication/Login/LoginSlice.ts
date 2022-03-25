@@ -7,7 +7,7 @@ export const LoginSliceAction = createAsyncThunk(
   async (payload: UserDataLogin) => {
     const userDataLogin: UserDataLogin = payload;
     const response = await UserApi.login(userDataLogin);
-    console.log("response" + response);
+    localStorage.setItem("user", JSON.stringify(response.data));
     return response.data;
   }
 );
