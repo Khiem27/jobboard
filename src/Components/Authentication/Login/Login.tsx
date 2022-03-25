@@ -58,7 +58,7 @@ function Login() {
       const resultAction: any = await dispatch(LoginSliceAction(userDataLogin));
       const originalPromiseResult = unwrapResult(resultAction);
       localStorage.setItem("user", JSON.stringify(originalPromiseResult));
-      window.location.href = "/";
+      // window.location.href = "/";
     } catch (error: any) {
       setAlert(error.message);
     }
