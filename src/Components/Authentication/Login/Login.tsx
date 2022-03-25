@@ -49,15 +49,18 @@ function Login() {
   const [alert, setAlert] = useState(false);
 
   const onSubmit = async (data: Inputs) => {
-    console.log(data);
+    console.log(1);
 
     try {
       const userDataLogin: UserDataLogin = {
         email: data.registerEmail,
         password: data.registerPassword,
       };
+
       const resultAction: any = await dispatch(LoginSliceAction(userDataLogin));
+      console.log(2);
       const originalPromiseResult = unwrapResult(resultAction);
+      console.log(3);
       localStorage.setItem("user", JSON.stringify(originalPromiseResult));
       // window.location.href = "/";
     } catch (error: any) {
