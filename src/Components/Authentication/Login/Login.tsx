@@ -56,7 +56,7 @@ function Login() {
         password: data.registerPassword,
       };
 
-      const resultAction: any = await dispatch(LoginSliceAction(userDataLogin));
+      await dispatch(LoginSliceAction(userDataLogin));
       console.log(2);
       console.log(3);
       // window.location.href = "/";
