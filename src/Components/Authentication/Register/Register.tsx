@@ -1,5 +1,4 @@
 import { yupResolver } from "@hookform/resolvers/yup";
-import { unwrapResult } from "@reduxjs/toolkit";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
@@ -59,17 +58,13 @@ function Register() {
   const [alert, setAlert] = useState(false);
 
   const onSubmit = async (data: UserInputs) => {
-    console.log(data);
-
     try {
       const userData: UserData = {
         username: data.registerUserName,
         email: data.registerEmail,
         password: data.registerPassword,
       };
-      const resultAction: any = await dispatch(RegisterSliceAction(userData));
-      const originalPromiseResult = unwrapResult(resultAction);
-      console.log(originalPromiseResult);
+      await dispatch(RegisterSliceAction(userData));
       window.location.href = "/login";
     } catch (error: any) {
       setAlert(error.message);

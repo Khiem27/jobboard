@@ -48,8 +48,6 @@ function Login() {
   const [alert, setAlert] = useState(false);
 
   const onSubmit = async (data: Inputs) => {
-    console.log(1);
-
     try {
       const userDataLogin: UserDataLogin = {
         email: data.registerEmail,
@@ -57,9 +55,7 @@ function Login() {
       };
 
       await dispatch(LoginSliceAction(userDataLogin));
-      console.log(2);
-      console.log(3);
-      // window.location.href = "/";
+      window.location.href = "/";
     } catch (error: any) {
       setAlert(error.message);
     }
