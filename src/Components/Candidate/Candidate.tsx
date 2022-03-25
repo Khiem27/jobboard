@@ -1,10 +1,32 @@
 import Avatar from "@mui/material/Avatar";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
+import { UserApi } from "../../Api/UserApi/UserApi";
 Candidate.propTypes = {};
 
 function Candidate() {
+  const [url, setUrl] = useState<any>(null);
+
+  useEffect(() => {
+    const getUserProfile = async () => {
+      const userProfile = await UserApi.getUserProfile();
+      setUrl(userProfile.data.avatar);
+    };
+    getUserProfile();
+  }, []);
+
+  const handleImageChange = async (e: any) => {
+    try {
+      if (e.target.files[0]) {
+        const formData = new FormData();
+        formData.append("file", e.target.files[0]);
+        await UserApi.postAvatar(formData);
+        window.location.reload();
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
   return (
     <div className="col-xl-3 col-lg-4 m-b30">
       <div className="sticky-top">
@@ -12,7 +34,7 @@ function Candidate() {
           <div className="candidate-detail text-center">
             <div className="canditate-des">
               <Link to="#">
-                <Avatar alt="" sx={{ width: 146, height: 146 }} />
+                <Avatar alt="" src={url} sx={{ width: 146, height: 146 }} />
               </Link>
               <div
                 className="upload-link"
@@ -21,7 +43,7 @@ function Candidate() {
                 data-placement="right"
               >
                 <input
-                  // onChange={handleImageChange}
+                  onChange={handleImageChange}
                   style={{ height: "100%", cursor: "pointer" }}
                   type="file"
                   className="update-flie"

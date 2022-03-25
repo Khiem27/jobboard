@@ -9,7 +9,9 @@ export const MyProfileSlice = createSlice({
     sendUserProfile: (state, action) => {
       const handlePutUser = async () => {
         const response = await UserApi.changeProfile(action.payload);
-        console.log(response);
+        if (response) {
+          window.location.reload();
+        }
       };
 
       handlePutUser();

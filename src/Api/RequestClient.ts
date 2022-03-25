@@ -1,8 +1,7 @@
 import axios from "axios";
 
 export const RequestClient = axios.create({
-  baseURL: "https://job-board-2710.herokuapp.com/",
-  headers: { "Content-Type": "application/json" },
+  baseURL: "https://job-board-2711.herokuapp.com//",
 });
 
 RequestClient.interceptors.response.use(

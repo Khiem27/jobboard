@@ -331,6 +331,11 @@ function Header() {
                       </Link>
                     </li>
                     <li>
+                      <Link className="dez-page" to="/post-blog">
+                        Post Blog
+                      </Link>
+                    </li>
+                    <li>
                       <Link className="dez-page" to="/blog-classic-sidebar">
                         Classic Sidebar
                       </Link>

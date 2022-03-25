@@ -13,6 +13,8 @@ import "./Css/templete.css";
 import "./Css/themify-icons.css";
 import LoginLayout from "./Layout/Authentication/Register/LoginLayout";
 import RegisterLayout from "./Layout/Authentication/Register/RegisterLayout";
+import BlogClassicLayout from "./Layout/Blog/BlogClassic/BlogClassicLayout";
+import PostBlogLayout from "./Layout/Blog/PostBlogLayout/PostBlogLayout";
 import MyProfileLayout from "./Layout/ForCandidates/MyProfile/MyProfileLayout";
 import Home from "./Layout/Home/Home";
 
@@ -24,6 +26,8 @@ function App() {
         <Route path="/login" element={<LoginLayout />} />
         <Route path="/" element={<Home />} />
         <Route path="my-profile" element={<MyProfileLayout />} />
+        <Route path="post-blog" element={<PostBlogLayout />} />
+        <Route path="blog-classic" element={<BlogClassicLayout />} />
       </Routes>
     </BrowserRouter>
   );
