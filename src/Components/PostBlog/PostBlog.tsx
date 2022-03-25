@@ -23,8 +23,7 @@ function Blog() {
       content: data,
     };
     // const response = await UserApi.sendBlog(newArr);
-    console.log(newArr);
-
+    // console.log(response);
     // window.location.reload();
   };
 

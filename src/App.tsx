@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import RequireAuth from "./Components/Authentication/RequireAuth/RequireAuth";
 import "./Css/bootstrap.min.css";
 import "./Css/line-awesome.min.css";
 import "./Css/main.c65b4059.chunk.css";
@@ -22,12 +23,42 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route
+          path="/"
+          element={
+            <RequireAuth>
+              <Home />
+            </RequireAuth>
+          }
+        />
+
+        <Route
+          path="post-blog"
+          element={
+            <RequireAuth>
+              <PostBlogLayout />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="blog-classic"
+          element={
+            <RequireAuth>
+              <BlogClassicLayout />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="my-profile"
+          element={
+            <RequireAuth>
+              <MyProfileLayout />
+            </RequireAuth>
+          }
+        />
         <Route path="/register" element={<RegisterLayout />} />
         <Route path="/login" element={<LoginLayout />} />
-        <Route path="/" element={<Home />} />
-        <Route path="my-profile" element={<MyProfileLayout />} />
-        <Route path="post-blog" element={<PostBlogLayout />} />
-        <Route path="blog-classic" element={<BlogClassicLayout />} />
+        <Route path="*" element={<p>Page not found</p>} />
       </Routes>
     </BrowserRouter>
   );

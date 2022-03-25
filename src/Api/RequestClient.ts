@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const RequestClient = axios.create({
-  baseURL: "https://job-board-2711.herokuapp.com//",
+  baseURL: "https://job-board-2711.herokuapp.com/",
 });
 
 RequestClient.interceptors.response.use(
@@ -18,8 +18,11 @@ RequestClient.interceptors.request.use(
     const userDataLocalParse = JSON.parse(
       localStorage.getItem("user") as string
     );
-    if (config.headers) {
-      config.headers.Authorization = userDataLocalParse.id;
+
+    if (userDataLocalParse) {
+      if (config.headers) {
+        config.headers.Authorization = userDataLocalParse.id;
+      }
     }
     return config;
   },
