@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import * as yup from "yup";
-import { UserDataLogin } from "../../shared/types";
+import { UserDataLogin } from "../../../Shared/types";
 import { LoginSliceAction } from "./LoginSlice";
 Login.propTypes = {};
 
@@ -45,7 +45,7 @@ function Login() {
     resolver: yupResolver(schema),
   });
   const dispatch = useDispatch();
-  const [alert, setAlert] = useState(false);
+  const [alert, setAlert] = useState(null);
 
   const onSubmit = async (data: Inputs) => {
     try {
@@ -54,7 +54,7 @@ function Login() {
         password: data.registerPassword,
       };
       await dispatch(LoginSliceAction(userDataLogin));
-      // window.location.href = "/";
+      window.location.href = "/";
     } catch (error: any) {
       setAlert(error.message);
     }

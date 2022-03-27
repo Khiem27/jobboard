@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import * as yup from "yup";
-import { UserData } from "../../shared/types";
+import { UserData } from "../../../Shared/types";
 import { RegisterSliceAction } from "./RegisterSlice";
 Register.propTypes = {};
 
