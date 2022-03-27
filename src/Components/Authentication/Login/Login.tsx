@@ -54,7 +54,7 @@ function Login() {
         password: data.registerPassword,
       };
       await dispatch(LoginSliceAction(userDataLogin));
-      window.location.href = "/";
+      // window.location.href = "/";
     } catch (error: any) {
       setAlert(error.message);
     }
