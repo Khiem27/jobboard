@@ -7,7 +7,6 @@ export const LoginSliceAction = createAsyncThunk(
   async (payload: UserDataLogin) => {
     const userDataLogin: UserDataLogin = payload;
     const response = await UserApi.login(userDataLogin);
-    localStorage.setItem("user", JSON.stringify(response.data));
     return response.data;
   }
 );
@@ -16,14 +15,16 @@ export const LoginSlice = createSlice({
   name: "counter",
   initialState: {
     value: null,
+    value2: null,
   },
   reducers: {},
   extraReducers: {
     "users/login/fulfilled": (state, action) => {
       state.value = action.payload;
     },
+
     "users/login/rejected": (state, action) => {
-      state.value = action.payload;
+      state.value2 = action;
     },
   },
 });
