@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { UserData } from "../../shared/types";
+import { UserData } from "../../../Shared/types";
 import { UserApi } from "./../../../Api/UserApi/UserApi";
 
 export const RegisterSliceAction = createAsyncThunk(
