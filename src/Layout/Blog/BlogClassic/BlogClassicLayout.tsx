@@ -1,5 +1,5 @@
 import React from "react";
-import BlogContent from "../../../Components/BlogContent/BlogContent";
+import BlogContent from "../../../Components/ Blog/BlogContent/BlogContent";
 import Header from "../../../Components/Header/Header";
 import BlogClassic from "../../../Components/PageTitle/Blog/BlogClassic";
 

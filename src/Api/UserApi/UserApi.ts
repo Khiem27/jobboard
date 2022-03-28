@@ -17,12 +17,16 @@ export const UserApi = {
     return RequestClient.get("user/profile");
   },
 
-  sendBlog: (data: any) => {
+  postBlog: (data: any) => {
     return RequestClient.post("blog", data);
   },
 
   getAllBlog: () => {
     return RequestClient.get("blog");
+  },
+
+  getOneBlog: (id: any) => {
+    return RequestClient.get(`blog/${id}`);
   },
 
   postAvatar: (data: any) => {

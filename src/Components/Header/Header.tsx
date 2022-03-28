@@ -43,7 +43,7 @@ function Header() {
             <div className="extra-nav">
               <div className="extra-cell">
                 {userName ? (
-                  <Link className="site-button" to="#">
+                  <Link className="site-button" to="/my-profile">
                     <i className="fa fa-user"></i> {userName}
                   </Link>
                 ) : (

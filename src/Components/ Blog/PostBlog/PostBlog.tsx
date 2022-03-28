@@ -41,7 +41,7 @@ function Blog() {
         <Container className="mt-5 mb-5">
           <Form>
             <FormGroup>
-              <Label for="title">Title</Label>
+              <Label htmlFor="title">Title</Label>
               <Input
                 type="text"
                 name="title"
@@ -53,7 +53,7 @@ function Blog() {
                 }}
               />
               <FormGroup>
-                <Label for="picture">Picture URL</Label>
+                <Label htmlFor="picture">Picture URL</Label>
                 <Input
                   type="text"
                   name="picture"
@@ -66,7 +66,7 @@ function Blog() {
                 />
               </FormGroup>
               <FormGroup>
-                <Label for="headline">Headline</Label>
+                <Label htmlFor="headline">Headline</Label>
                 <Input
                   type="text"
                   name="headline"
