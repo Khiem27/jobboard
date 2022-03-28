@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Loading from "./Loading";
-import "./Page404.css";
+import "./Page404.scoped.css";
 Page404.propTypes = {};
 
 function Page404() {
