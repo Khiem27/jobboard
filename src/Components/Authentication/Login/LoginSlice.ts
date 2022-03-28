@@ -2,15 +2,12 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { UserDataLogin } from "../../../Shared/types";
 import { UserApi } from "./../../../Api/UserApi/UserApi";
 const SLICE_LOGIN_NAME = "login";
-// code convention:
 
 export const LoginSliceAction = createAsyncThunk(
   "users/login",
   async (payload: UserDataLogin) => {
     const userDataLogin: UserDataLogin = payload;
     const response = await UserApi.login(userDataLogin);
-
-    localStorage.setItem("user", JSON.stringify(response.data));
     return response.data;
   }
 );

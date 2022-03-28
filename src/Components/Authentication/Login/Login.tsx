@@ -54,7 +54,9 @@ function Login() {
         email: data.registerEmail,
         password: data.registerPassword,
       };
-      await dispatch(LoginSliceAction(userDataLogin));
+      const resultAction: any = await dispatch(LoginSliceAction(userDataLogin));
+      const originalPromiseResult = unwrapResult(resultAction);
+      localStorage.setItem("user", JSON.stringify(originalPromiseResult));
       window.location.href = "/";
     } catch (error: any) {
       setAlert(error.message);

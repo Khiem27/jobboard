@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import RequireAuth from "./Components/Authentication/RequireAuth/RequireAuth";
+import RequireAuth from "./Components/RequireAuth/RequireAuth";
 import "./Css/bootstrap.min.css";
 import "./Css/line-awesome.min.css";
 import "./Css/main.c65b4059.chunk.css";
