@@ -1446,7 +1446,7 @@ ul.has-background {
 
 .wp-block-media-text.is-vertically-aligned-top .wp-block-media-text__content,
 .wp-block-media-text.is-vertically-aligned-top .wp-block-media-text__media {
-    align-self: start
+    align-self: flex-start
 }
 
 .wp-block-media-text.is-vertically-aligned-center .wp-block-media-text__content,
@@ -6488,7 +6488,7 @@ span.blinking-cursor {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     background: #fff
 }
 
@@ -24165,7 +24165,7 @@ aside.nl_sidebar {
     display: flex;
     align-items: center;
     height: 100%;
-    justify-content: start;
+    justify-content: flex-start;
     width: 80%
 }
 
@@ -30800,7 +30800,7 @@ img.inverted_menu_color_img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: start;
+    align-items: flex-start;
     font-family: var(--theme-secondary-font);
     font-size: 22px
 }
@@ -41869,7 +41869,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
         height: 80%;
         display: flex;
         flex-direction: column;
-        align-items: start
+        align-items: flex-start
     }
     .snapshot-product-innov-orangeblock {
         background-color: #ffbf69;
