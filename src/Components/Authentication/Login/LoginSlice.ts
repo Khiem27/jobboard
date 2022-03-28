@@ -15,7 +15,6 @@ export const LoginSlice = createSlice({
   name: "counter",
   initialState: {
     value: null,
-    value2: null,
   },
   reducers: {},
   extraReducers: {
@@ -24,7 +23,7 @@ export const LoginSlice = createSlice({
     },
 
     "users/login/rejected": (state, action) => {
-      state.value2 = action;
+      state.value = action;
     },
   },
 });
