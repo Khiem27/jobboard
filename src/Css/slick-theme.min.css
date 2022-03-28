@@ -15,7 +15,8 @@
 }
 
 .slick-loading .slick-list {
-  /* background: url(ajax-loader.gif) center center no-repeat #fff */
+  background: url(../../public//svg/Ripple-1s-200px.gif) center center no-repeat
+    #fff;
 }
 
 .slick-next,
