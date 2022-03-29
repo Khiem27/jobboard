@@ -6,6 +6,8 @@ Candidate.propTypes = {};
 
 function Candidate() {
   const [url, setUrl] = useState<any>(null);
+  const [userName, setUserName] = useState([]);
+  const [userProf, setUserProf] = useState([]);
 
   useEffect(() => {
     const getUserProfile = async () => {
@@ -13,6 +15,11 @@ function Candidate() {
       setUrl(userProfile.data.avatar);
     };
     getUserProfile();
+
+    const userData: any = localStorage.getItem("user");
+    const userDataParse = JSON.parse(userData);
+    setUserName(userDataParse.username);
+    setUserProf(userDataParse.professional_title);
   }, []);
 
   const handleImageChange = async (e: any) => {
@@ -55,10 +62,12 @@ function Candidate() {
             <div className="candidate-title">
               <div className="">
                 <h4 className="m-b5">
-                  <Link to="#">David Matin</Link>
+                  <Link to="#">{userName}</Link>
                 </h4>
                 <p className="m-b0">
-                  <Link to="#">Web developer</Link>
+                  <Link style={{ textTransform: "capitalize" }} to="#">
+                    {userProf ? `${userProf}` : "Professional Title*"}
+                  </Link>
                 </p>
               </div>
             </div>

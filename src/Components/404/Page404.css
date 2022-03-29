@@ -4022,7 +4022,7 @@ body {
   min-height: 20px;
   margin-left: 2.564102564102564%;
   box-sizing: border-box;
-  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -4484,7 +4484,7 @@ body {
   min-height: 20px;
   margin-left: 2.564102564102564%;
   box-sizing: border-box;
-  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -4696,7 +4696,7 @@ body {
   background: #222;
   color: #fff;
   transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
@@ -4706,7 +4706,7 @@ body {
 .portfolio_item img {
   width: 100%;
   transition: transform 0.5s;
-  -moz-transition: transform 0.5s;
+  transition: transform 0.5s;
   -ms-transition: transform 0.5s;
   -o-transition: transform 0.5s;
   transition: transform 0.5s;
@@ -4777,7 +4777,7 @@ body {
   display: inline-block;
   vertical-align: middle;
   transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
@@ -4794,7 +4794,7 @@ body {
   font-size: 20px;
   display: inline;
   transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
@@ -4876,7 +4876,7 @@ body {
 
 .portfolio_item:hover img {
   transform: translateY(-50px);
-  -moz-transform: translateY(-50px);
+  transform: translateY(-50px);
   -ms-transform: translateY(-50px);
   -o-transform: translateY(-50px);
   transform: translateY(-50px);
@@ -4910,7 +4910,7 @@ body {
 .isotope,
 .isotope .isotope-item {
   transition-duration: 0.8s;
-  -moz-transition-duration: 0.8s;
+  transition-duration: 0.8s;
   -ms-transition-duration: 0.8s;
   -o-transition-duration: 0.8s;
   transition-duration: 0.8s;
@@ -4918,7 +4918,7 @@ body {
 
 .isotope {
   transition-property: height, width;
-  -moz-transition-property: height, width;
+  transition-property: height, width;
   -ms-transition-property: height, width;
   -o-transition-property: height, width;
   transition-property: height, width;
@@ -4926,7 +4926,7 @@ body {
 
 .isotope .isotope-item {
   transition-property: transform, opacity;
-  -moz-transition-property: -moz-transform, opacity;
+  transition-property: transform, opacity;
   -ms-transition-property: -ms-transform, opacity;
   -o-transition-property: -o-transform, opacity;
   transition-property: transform, opacity;
@@ -4936,7 +4936,7 @@ body {
 .isotope.no-transition .isotope-item,
 .isotope .isotope-item.no-transition {
   transition-duration: 0s;
-  -moz-transition-duration: 0s;
+  transition-duration: 0s;
   -ms-transition-duration: 0s;
   -o-transition-duration: 0s;
   transition-duration: 0s;
@@ -5029,7 +5029,7 @@ body {
   font-size: 15px;
   padding: 11px 15px;
   transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
@@ -5040,7 +5040,7 @@ body {
   font-size: 17px;
   color: #222;
   transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
@@ -5050,7 +5050,7 @@ body {
 .single_portfolio_pagination.single_portfolio_pagination_bottom .prev i {
   margin-right: 0;
   transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
@@ -5060,7 +5060,7 @@ body {
 .single_portfolio_pagination.single_portfolio_pagination_bottom .next i {
   margin-left: 0;
   transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
@@ -5290,7 +5290,7 @@ body {
 
 .portfolio_3columns_description .portfolio_3column .portfolio_inner_content {
   box-shadow: none;
-  -moz-box-shadow: none;
+  box-shadow: none;
   box-shadow: none;
 }
 
@@ -5358,7 +5358,7 @@ body {
 
 .portfolio_4columns_description .portfolio_4column .portfolio_inner_content {
   box-shadow: none;
-  -moz-box-shadow: none;
+  box-shadow: none;
   box-shadow: none;
 }
 
@@ -6098,7 +6098,7 @@ textarea.mllcf-form-fields {
   border: 1px solid #d3d7da;
   border-bottom: 0;
   transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
@@ -6117,7 +6117,7 @@ textarea.mllcf-form-fields {
 .tcvpb-accordion .ui-accordion-header:hover {
   padding-left: 90px;
   transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
@@ -6139,7 +6139,7 @@ textarea.mllcf-form-fields {
   text-align: center;
   z-index: -1;
   transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
@@ -6162,7 +6162,7 @@ textarea.mllcf-form-fields {
   .ui-accordion-header-icon.ui-icon.ui-icon-triangle-1-e {
   width: 64px;
   transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
@@ -6180,7 +6180,7 @@ textarea.mllcf-form-fields {
   text-align: center;
   z-index: -1;
   transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
@@ -6191,7 +6191,7 @@ textarea.mllcf-form-fields {
   .ui-accordion-header-icon.ui-icon.ui-icon-triangle-1-s {
   width: 64px;
   transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
@@ -7316,7 +7316,7 @@ span.blinking-cursor {
   max-height: 840px;
   border-radius: 50%;
   box-shadow: 2px -30px 95px 0 #000e49;
-  -moz-box-shadow: 2px -30px 95px 0 #000e49;
+  box-shadow: 2px -30px 95px 0 #000e49;
   box-shadow: 2px -30px 95px 0 #000e49;
   position: relative;
   background-color: #fff;
@@ -7392,7 +7392,7 @@ span.blinking-cursor {
 
 .home_clients_logo {
   filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
   filter: grayscale(100%);
   transition: all 1s;
   transform: scale(0.55);
@@ -7404,7 +7404,7 @@ span.blinking-cursor {
 
 .home_spin_active {
   filter: unset !important;
-  -moz-filter: unset !important;
+  filter: unset !important;
   filter: unset !important;
   min-width: 15px;
 }
@@ -9746,7 +9746,7 @@ aside.nl_sidebar {
 .chatbot_div_outer {
   overflow-y: scroll;
   height: 100%;
-  overflow: -moz-scrollbars-none;
+  overflow: scrollbars-none;
 }
 
 .chatbot_div_outer::scrollbar {
@@ -9785,7 +9785,7 @@ aside.nl_sidebar {
   border-top-right-radius: 17.8px;
   border-bottom-right-radius: 17.8px;
   width: fit-content;
-  width: -moz-fit-content;
+  width: fit-content;
   width: -ms-fit-content;
   font-family: "Josefin Sans", sans-serif;
   max-width: 450px;
@@ -9793,7 +9793,7 @@ aside.nl_sidebar {
   opacity: 1;
   margin-left: 30px;
   box-shadow: 0 7px 18px 0 rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 7px 18px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 7px 18px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 7px 18px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -9807,7 +9807,7 @@ aside.nl_sidebar {
 
 .chatbot_benefits .span4 {
   box-shadow: 0 7px 18px 0 rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 7px 18px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 7px 18px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 7px 18px 0 rgba(0, 0, 0, 0.1);
   border-radius: 17px;
   transition: opacity 0.5s;
@@ -9960,7 +9960,7 @@ aside.nl_sidebar {
   border-radius: 17px;
   box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.1);
   background-color: #fff;
   margin: auto;
   cursor: pointer;
@@ -10775,7 +10775,7 @@ aside.nl_sidebar {
   right: -11px;
   top: 20px;
   zoom: 2;
-  -moz-transform: scale(2);
+  transform: scale(2);
   transform: scale(2);
 }
 
@@ -12745,7 +12745,7 @@ aside.nl_sidebar {
 .ciOurWorksImgBox {
   position: relative;
   max-width: fit-content;
-  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 
 .ciAnimatedImgLft {
@@ -13111,7 +13111,7 @@ aside.nl_sidebar {
 .dh__catg-imgBox {
   position: relative;
   max-width: fit-content;
-  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 
 .dh__catg-imgContainer {
@@ -17166,7 +17166,7 @@ aside.nl_sidebar {
   align-items: center;
   justify-content: center;
   box-shadow: 0px 5px 48px -20px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 5px 48px -20px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 5px 48px -20px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 5px 48px -20px rgba(0, 0, 0, 0.75);
 }
 
@@ -17329,7 +17329,7 @@ aside.nl_sidebar {
   align-items: center;
   justify-content: center;
   box-shadow: 0px 5px 48px -20px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 5px 48px -20px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 5px 48px -20px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 5px 48px -20px rgba(0, 0, 0, 0.75);
 }
 
@@ -17349,7 +17349,7 @@ aside.nl_sidebar {
   opacity: 1;
   transition: opacity 1s linear;
   zoom: 0.7;
-  -moz-transform: scale(0.7);
+  transform: scale(0.7);
   z-index: 999;
 }
 
@@ -20638,7 +20638,7 @@ aside.nl_sidebar {
   display: none !important;
   background: #000 !important;
   box-shadow: 0 0 20px 5px #000 !important;
-  -moz-box-shadow: 0 0 20px 5px #000 !important;
+  box-shadow: 0 0 20px 5px #000 !important;
   -ms-box-shadow: 0 0 20px 5px #000 !important;
   -o-box-shadow: 0 0 20px 5px #000 !important;
   box-shadow: 0 0 20px 5px #000 !important;
@@ -20746,7 +20746,7 @@ aside.nl_sidebar {
   background: #fff;
   text-align: left;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -20831,7 +20831,7 @@ aside.nl_sidebar {
   background-color: #e3272f;
   cursor: pointer;
   box-shadow: 0 6px 11px 0 rgba(0, 0, 0, 0.12);
-  -moz-box-shadow: 0 6px 11px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 6px 11px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 6px 11px 0 rgba(0, 0, 0, 0.12);
   opacity: 0;
   transition: opacity 0.5s;
@@ -20846,14 +20846,14 @@ aside.nl_sidebar {
   border-top-right-radius: 17.8px;
   border-bottom-right-radius: 17.8px;
   width: fit-content;
-  width: -moz-fit-content;
+  width: fit-content;
   font-family: "Avenir-Roman", sans-serif;
   max-width: 240px;
   background-color: #fff;
   opacity: 1;
   margin-left: 12%;
   box-shadow: 0 7px 13px 0 rgba(115, 115, 115, 0.1);
-  -moz-box-shadow: 0 7px 13px 0 rgba(115, 115, 115, 0.1);
+  box-shadow: 0 7px 13px 0 rgba(115, 115, 115, 0.1);
   box-shadow: 0 7px 13px 0 rgba(115, 115, 115, 0.1);
 }
 
@@ -20883,13 +20883,13 @@ aside.nl_sidebar {
   background: 0 0;
 }
 
-@-moz-document url-prefix() {
+@document url-prefix() {
   .bot_bar {
     overflow: hidden !important;
   }
 }
 
-@-moz-document url-prefix() {
+@document url-prefix() {
   #careers_div {
     overflow: hidden !important;
   }
@@ -20928,7 +20928,7 @@ aside.nl_sidebar {
   margin-left: 5%;
   cursor: pointer;
   box-shadow: 0 6px 11px 0 rgba(0, 0, 0, 0.12);
-  -moz-box-shadow: 0 6px 11px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 6px 11px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 6px 11px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -20961,7 +20961,7 @@ aside.nl_sidebar {
   margin-left: 4%;
   cursor: pointer;
   box-shadow: 0 6px 11px 0 rgba(0, 0, 0, 0.12);
-  -moz-box-shadow: 0 6px 11px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 6px 11px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 6px 11px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -20993,7 +20993,7 @@ aside.nl_sidebar {
   margin-left: 4%;
   cursor: pointer;
   box-shadow: 0 6px 11px 0 rgba(0, 0, 0, 0.12);
-  -moz-box-shadow: 0 6px 11px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 6px 11px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 6px 11px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -21026,7 +21026,7 @@ aside.nl_sidebar {
   margin-left: 4%;
   cursor: pointer;
   box-shadow: 0 6px 11px 0 rgba(0, 0, 0, 0.12);
-  -moz-box-shadow: 0 6px 11px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 6px 11px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 6px 11px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -21056,7 +21056,7 @@ aside.nl_sidebar {
   border-bottom-left-radius: 17.8px;
   width: fit-content;
   box-shadow: 0 6px 11px 0 rgba(0, 0, 0, 0.12);
-  -moz-box-shadow: 0 6px 11px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 6px 11px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 6px 11px 0 rgba(0, 0, 0, 0.12);
   font-family: "Avenir-Roman", sans-serif;
   max-width: 204px;
@@ -21134,7 +21134,7 @@ aside.nl_sidebar {
 .bot_blog_div img {
   box-shadow: 0px 0px 25px -5px rgba(0, 0, 0, 0.55);
   border-radius: 12px;
-  -moz-box-shadow: 0px 0px 25px -5px rgba(0, 0, 0, 0.55);
+  box-shadow: 0px 0px 25px -5px rgba(0, 0, 0, 0.55);
   box-shadow: 0px 0px 25px -5px rgba(0, 0, 0, 0.55);
   max-width: unset;
   max-height: 126px;
@@ -21477,7 +21477,7 @@ aside.nl_sidebar {
 .mantra_work_with_us button:hover,
 .part_of_crew button:hover {
   box-shadow: -2px 20px 20px -20px rgba(0, 0, 0, 0.6);
-  -moz-box-shadow: -2px 20px 20px -20px rgba(0, 0, 0, 0.6);
+  box-shadow: -2px 20px 20px -20px rgba(0, 0, 0, 0.6);
   box-shadow: -2px 20px 20px -20px rgba(0, 0, 0, 0.6);
 }
 
@@ -21654,7 +21654,7 @@ aside.nl_sidebar {
   .part_of_crew button {
     font-size: 15px;
     box-shadow: -2px 20px 20px -20px rgba(0, 0, 0, 0.6);
-    -moz-box-shadow: -2px 20px 20px -20px rgba(0, 0, 0, 0.6);
+    box-shadow: -2px 20px 20px -20px rgba(0, 0, 0, 0.6);
     box-shadow: -2px 20px 20px -20px rgba(0, 0, 0, 0.6);
   }
   .modal-open {
@@ -21801,7 +21801,7 @@ aside.nl_sidebar {
   }
   .portfolio_item:hover .overlayed .overlay {
     height: fit-content;
-    height: -moz-fit-content;
+    height: fit-content;
   }
   .testing__tools ul li {
     width: 100%;
@@ -22179,7 +22179,7 @@ aside.nl_sidebar {
   background-color: #c41920;
   background-image: url(//www.mantralabsglobal.com/wp-content/themes/spiral-child/images/film_grain.png);
   -o-animation: backgroundScroll 0.2s infinite;
-  -moz-animation: backgroundScroll 0.2s infinite;
+  animation: backgroundScroll 0.2s infinite;
   animation: backgroundScroll 0.2s infinite;
   animation: backgroundScroll 0.2s infinite;
   z-index: 1;
@@ -23012,7 +23012,7 @@ aside.nl_sidebar {
   opacity: 1;
   transition: opacity 1s linear;
   zoom: 0.7;
-  -moz-transform: scale(0.7);
+  transform: scale(0.7);
   z-index: 999;
 }
 
@@ -23050,7 +23050,7 @@ aside.nl_sidebar {
   transform: translateX(-50%);
   transition: opacity 1s linear;
   zoom: 0.7;
-  -moz-transform: scale(0.7);
+  transform: scale(0.7);
 }
 
 .home_arrow_inner {
@@ -23235,7 +23235,7 @@ aside.nl_sidebar {
   height: 0;
   overflow: hidden;
   transform: translateX(-50%) scale(1);
-  -moz-transition: height 1s linear;
+  transition: height 1s linear;
   transition: height 1s linear;
   -o-transition: height 1s linear;
   transition: height 1s linear;
@@ -23424,7 +23424,7 @@ aside.nl_sidebar {
   left: 0;
   animation: boat_go 60s infinite;
   animation: boat_go 60s infinite;
-  -moz-animation: boat_go 60s infinite;
+  animation: boat_go 60s infinite;
   -o-animation: boat_go 60s infinite;
   transition: left 60s;
 }
@@ -23442,7 +23442,7 @@ aside.nl_sidebar {
   min-width: 2000px;
   animation: water_move 5s infinite;
   animation: water_move 5s infinite;
-  -moz-animation: water_move 5s infinite;
+  animation: water_move 5s infinite;
   -o-animation: water_move 5s infinite;
 }
 
@@ -25703,7 +25703,7 @@ aside header h3:after {
   width: 100%;
   margin: 0;
   transition: all 0.3s;
-  -moz-transition: all 0.3s;
+  transition: all 0.3s;
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
@@ -27886,7 +27886,7 @@ a .for-automation-other-case-study {
   position: fixed;
   background: 0 0;
   transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
@@ -27912,7 +27912,7 @@ body.admin-bar #MLL_main_header.smaller {
   top: -60px;
   background: #222;
   transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
@@ -27972,7 +27972,7 @@ body.admin-bar #MLL_main_header.smaller {
   padding: 0;
   outline: none;
   user-select: none;
-  -moz-user-select: none;
+  user-select: none;
   -ms-user-select: none;
   user-select: none;
   touch-callout: none;
@@ -28043,7 +28043,7 @@ body.admin-bar #MLL_main_header.smaller {
 
 #MLL_header #logo #main_logo {
   transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
@@ -28620,7 +28620,7 @@ img.inverted_menu_color_img {
   transition: width 0.5s linear;
   box-shadow: 0 2px 29px 0 rgba(0, 0, 0, 0.15);
   box-shadow: 0 2px 29px 0 rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 2px 29px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 29px 0 rgba(0, 0, 0, 0.15);
 }
 
 .home_about_menu {
@@ -28987,7 +28987,7 @@ img.inverted_menu_color_img {
   zoom: 0.9;
   transform: scale(0.9);
   transform: scale(0.9);
-  -moz-transform: scale(0.9);
+  transform: scale(0.9);
   height: 110vh;
   right: 5%;
   width: auto;
@@ -32109,7 +32109,7 @@ img.inverted_menu_color_img {
     align-items: center;
     justify-content: center;
     box-shadow: 0px 5px 48px -20px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 5px 48px -20px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 5px 48px -20px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 5px 48px -20px rgba(0, 0, 0, 0.75);
   }
   .event_new p,
@@ -32822,7 +32822,7 @@ img.inverted_menu_color_img {
     align-items: center;
     justify-content: center;
     box-shadow: 0px 5px 48px -20px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 5px 48px -20px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 5px 48px -20px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 5px 48px -20px rgba(0, 0, 0, 0.75);
   }
   .footer_crew h1 {
@@ -33195,7 +33195,7 @@ img.inverted_menu_color_img {
     align-items: center;
     justify-content: center;
     box-shadow: 0px 5px 48px -20px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 5px 48px -20px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 5px 48px -20px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 5px 48px -20px rgba(0, 0, 0, 0.75);
   }
   .event_new p,
@@ -33957,7 +33957,7 @@ img.inverted_menu_color_img {
 #jpreBar {
   background: #1d2050;
   box-shadow: 0 0 20px 5px #1d2050;
-  -moz-box-shadow: 0 0 20px 5px #1d2050;
+  box-shadow: 0 0 20px 5px #1d2050;
   -ms-box-shadow: 0 0 20px 5px #1d2050;
   -o-box-shadow: 0 0 20px 5px #1d2050;
   box-shadow: 0 0 20px 5px #1d2050;
@@ -33993,7 +33993,7 @@ blockquote {
   background: #1d2050;
 }
 
-::-moz-selection {
+::selection {
   background: #1d2050;
 }
 
@@ -37315,7 +37315,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   .home_clients_tops_mobile img {
     height: 100%;
     box-shadow: 0 4vh 4vh -4vh #000;
-    -moz-box-shadow: 0 4vh 4vh -4vh #000;
+    box-shadow: 0 4vh 4vh -4vh #000;
     box-shadow: 0 4vh 4vh -4vh #000;
   }
   .home_clients_tops_mobile .home_clients_top_text h1 {
@@ -39488,7 +39488,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
     margin-top: 15px;
     margin-bottom: 40px;
     box-shadow: -2px 20px 20px -20px rgba(0, 0, 0, 0.6);
-    -moz-box-shadow: -2px 20px 20px -20px rgba(0, 0, 0, 0.6);
+    box-shadow: -2px 20px 20px -20px rgba(0, 0, 0, 0.6);
     box-shadow: -2px 20px 20px -20px rgba(0, 0, 0, 0.6);
   }
   .about_mission,
@@ -42755,7 +42755,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
     right: -11px;
     top: 20px;
     zoom: 1.1;
-    -moz-transform: scale(2);
+    transform: scale(2);
     transform: scale(2);
   }
   .lms_contact .tcvpb_column_tc_span12 {
@@ -43933,7 +43933,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   text-transform: none;
   line-height: 1;
   font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  osx-font-smoothing: grayscale;
 }
 
 .tmf-stumbleupon:before {
@@ -45395,7 +45395,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 .animated {
   backface-visibility: hidden;
   -o-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
   backface-visibility: hidden;
   animation-fill-mode: both;
   transform: translate3d(0, 0, 0);
@@ -45403,9 +45403,9 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   -o-animation-fill-mode: both;
   -o-transform: translate3d(0, 0, 0);
   -o-perspective: 1000;
-  -moz-animation-fill-mode: both;
-  -moz-transform: translate3d(0, 0, 0);
-  -moz-perspective: 1000;
+  animation-fill-mode: both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000;
   animation-fill-mode: both;
   transform: translate3d(0, 0, 0);
   perspective: 1000;
@@ -45423,7 +45423,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes flash {
+@keyframes flash {
   0%,
   100%,
   50% {
@@ -45461,7 +45461,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.flash {
   animation-name: flash;
-  -moz-animation-name: flash;
+  animation-name: flash;
   -o-animation-name: flash;
   animation-name: flash;
 }
@@ -45486,23 +45486,23 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes shake {
+@keyframes shake {
   0%,
   100% {
-    -moz-transform: translateX(0);
+    transform: translateX(0);
   }
   10%,
   30%,
   50%,
   70%,
   90% {
-    -moz-transform: translateX(-10px);
+    transform: translateX(-10px);
   }
   20%,
   40%,
   60%,
   80% {
-    -moz-transform: translateX(10px);
+    transform: translateX(10px);
   }
 }
 
@@ -45548,7 +45548,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.shake {
   animation-name: shake;
-  -moz-animation-name: shake;
+  animation-name: shake;
   -o-animation-name: shake;
   animation-name: shake;
 }
@@ -45569,19 +45569,19 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes bounce {
+@keyframes bounce {
   0%,
   100%,
   20%,
   50%,
   80% {
-    -moz-transform: translateY(0);
+    transform: translateY(0);
   }
   40% {
-    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
   }
   60% {
-    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
   }
 }
 
@@ -45619,7 +45619,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.bounce {
   animation-name: bounce;
-  -moz-animation-name: bounce;
+  animation-name: bounce;
   -o-animation-name: bounce;
   animation-name: bounce;
 }
@@ -45648,27 +45648,27 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes tada {
+@keyframes tada {
   0% {
-    -moz-transform: scale(1);
+    transform: scale(1);
   }
   10%,
   20% {
-    -moz-transform: scale(0.9) rotate(-3deg);
+    transform: scale(0.9) rotate(-3deg);
   }
   30%,
   50%,
   70%,
   90% {
-    -moz-transform: scale(1.1) rotate(3deg);
+    transform: scale(1.1) rotate(3deg);
   }
   40%,
   60%,
   80% {
-    -moz-transform: scale(1.1) rotate(-3deg);
+    transform: scale(1.1) rotate(-3deg);
   }
   100% {
-    -moz-transform: scale(1) rotate(0);
+    transform: scale(1) rotate(0);
   }
 }
 
@@ -45722,7 +45722,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.tada {
   animation-name: tada;
-  -moz-animation-name: tada;
+  animation-name: tada;
   -o-animation-name: tada;
   animation-name: tada;
 }
@@ -45752,21 +45752,21 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes swing {
+@keyframes swing {
   20% {
-    -moz-transform: rotate(15deg);
+    transform: rotate(15deg);
   }
   40% {
-    -moz-transform: rotate(-10deg);
+    transform: rotate(-10deg);
   }
   60% {
-    -moz-transform: rotate(5deg);
+    transform: rotate(5deg);
   }
   80% {
-    -moz-transform: rotate(-5deg);
+    transform: rotate(-5deg);
   }
   100% {
-    -moz-transform: rotate(0);
+    transform: rotate(0);
   }
 }
 
@@ -45808,11 +45808,11 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.swing {
   transform-origin: top center;
-  -moz-transform-origin: top center;
+  transform-origin: top center;
   -o-transform-origin: top center;
   transform-origin: top center;
   animation-name: swing;
-  -moz-animation-name: swing;
+  animation-name: swing;
   -o-animation-name: swing;
   animation-name: swing;
 }
@@ -45841,27 +45841,27 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes wobble {
+@keyframes wobble {
   0% {
-    -moz-transform: translateX(0);
+    transform: translateX(0);
   }
   15% {
-    -moz-transform: translateX(-25%) rotate(-5deg);
+    transform: translateX(-25%) rotate(-5deg);
   }
   30% {
-    -moz-transform: translateX(20%) rotate(3deg);
+    transform: translateX(20%) rotate(3deg);
   }
   45% {
-    -moz-transform: translateX(-15%) rotate(-3deg);
+    transform: translateX(-15%) rotate(-3deg);
   }
   60% {
-    -moz-transform: translateX(10%) rotate(2deg);
+    transform: translateX(10%) rotate(2deg);
   }
   75% {
-    -moz-transform: translateX(-5%) rotate(-1deg);
+    transform: translateX(-5%) rotate(-1deg);
   }
   100% {
-    -moz-transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
@@ -45915,7 +45915,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.wobble {
   animation-name: wobble;
-  -moz-animation-name: wobble;
+  animation-name: wobble;
   -o-animation-name: wobble;
   animation-name: wobble;
 }
@@ -45932,15 +45932,15 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes pulse {
+@keyframes pulse {
   0% {
-    -moz-transform: scale(1);
+    transform: scale(1);
   }
   50% {
-    -moz-transform: scale(1.1);
+    transform: scale(1.1);
   }
   100% {
-    -moz-transform: scale(1);
+    transform: scale(1);
   }
 }
 
@@ -45970,7 +45970,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.pulse {
   animation-name: pulse;
-  -moz-animation-name: pulse;
+  animation-name: pulse;
   -o-animation-name: pulse;
   animation-name: pulse;
 }
@@ -45998,27 +45998,27 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes flip {
+@keyframes flip {
   0% {
-    -moz-transform: perspective(400px) rotateY(0);
-    -moz-animation-timing-function: ease-out;
+    transform: perspective(400px) rotateY(0);
+    animation-timing-function: ease-out;
   }
   40% {
-    -moz-transform: perspective(400px) translateZ(150px) rotateY(170deg);
-    -moz-animation-timing-function: ease-out;
+    transform: perspective(400px) translateZ(150px) rotateY(170deg);
+    animation-timing-function: ease-out;
   }
   50% {
-    -moz-transform: perspective(400px) translateZ(150px) rotateY(190deg)
+    transform: perspective(400px) translateZ(150px) rotateY(190deg)
       scale(1);
-    -moz-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
   }
   80% {
-    -moz-transform: perspective(400px) rotateY(360deg) scale(0.95);
-    -moz-animation-timing-function: ease-in;
+    transform: perspective(400px) rotateY(360deg) scale(0.95);
+    animation-timing-function: ease-in;
   }
   100% {
-    -moz-transform: perspective(400px) scale(1);
-    -moz-animation-timing-function: ease-in;
+    transform: perspective(400px) scale(1);
+    animation-timing-function: ease-in;
   }
 }
 
@@ -46071,8 +46071,8 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 .animated.flip {
   backface-visibility: visible !important;
   animation-name: flip;
-  -moz-backface-visibility: visible !important;
-  -moz-animation-name: flip;
+  backface-visibility: visible !important;
+  animation-name: flip;
   -o-backface-visibility: visible !important;
   -o-animation-name: flip;
   backface-visibility: visible !important;
@@ -46096,19 +46096,19 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes flipInX {
+@keyframes flipInX {
   0% {
-    -moz-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
     opacity: 0;
   }
   40% {
-    -moz-transform: perspective(400px) rotateX(-10deg);
+    transform: perspective(400px) rotateX(-10deg);
   }
   70% {
-    -moz-transform: perspective(400px) rotateX(10deg);
+    transform: perspective(400px) rotateX(10deg);
   }
   100% {
-    -moz-transform: perspective(400px) rotateX(0);
+    transform: perspective(400px) rotateX(0);
     opacity: 1;
   }
 }
@@ -46150,8 +46150,8 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 .animated.flipInX {
   backface-visibility: visible !important;
   animation-name: flipInX;
-  -moz-backface-visibility: visible !important;
-  -moz-animation-name: flipInX;
+  backface-visibility: visible !important;
+  animation-name: flipInX;
   -o-backface-visibility: visible !important;
   -o-animation-name: flipInX;
   backface-visibility: visible !important;
@@ -46169,13 +46169,13 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes flipOutX {
+@keyframes flipOutX {
   0% {
-    -moz-transform: perspective(400px) rotateX(0);
+    transform: perspective(400px) rotateX(0);
     opacity: 1;
   }
   100% {
-    -moz-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
     opacity: 0;
   }
 }
@@ -46205,8 +46205,8 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 .animated.flipOutX {
   animation-name: flipOutX;
   backface-visibility: visible !important;
-  -moz-animation-name: flipOutX;
-  -moz-backface-visibility: visible !important;
+  animation-name: flipOutX;
+  backface-visibility: visible !important;
   -o-animation-name: flipOutX;
   -o-backface-visibility: visible !important;
   animation-name: flipOutX;
@@ -46230,19 +46230,19 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes flipInY {
+@keyframes flipInY {
   0% {
-    -moz-transform: perspective(400px) rotateY(90deg);
+    transform: perspective(400px) rotateY(90deg);
     opacity: 0;
   }
   40% {
-    -moz-transform: perspective(400px) rotateY(-10deg);
+    transform: perspective(400px) rotateY(-10deg);
   }
   70% {
-    -moz-transform: perspective(400px) rotateY(10deg);
+    transform: perspective(400px) rotateY(10deg);
   }
   100% {
-    -moz-transform: perspective(400px) rotateY(0);
+    transform: perspective(400px) rotateY(0);
     opacity: 1;
   }
 }
@@ -46284,8 +46284,8 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 .animated.flipInY {
   backface-visibility: visible !important;
   animation-name: flipInY;
-  -moz-backface-visibility: visible !important;
-  -moz-animation-name: flipInY;
+  backface-visibility: visible !important;
+  animation-name: flipInY;
   -o-backface-visibility: visible !important;
   -o-animation-name: flipInY;
   backface-visibility: visible !important;
@@ -46303,13 +46303,13 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes flipOutY {
+@keyframes flipOutY {
   0% {
-    -moz-transform: perspective(400px) rotateY(0);
+    transform: perspective(400px) rotateY(0);
     opacity: 1;
   }
   100% {
-    -moz-transform: perspective(400px) rotateY(90deg);
+    transform: perspective(400px) rotateY(90deg);
     opacity: 0;
   }
 }
@@ -46339,8 +46339,8 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 .animated.flipOutY {
   backface-visibility: visible !important;
   animation-name: flipOutY;
-  -moz-backface-visibility: visible !important;
-  -moz-animation-name: flipOutY;
+  backface-visibility: visible !important;
+  animation-name: flipOutY;
   -o-backface-visibility: visible !important;
   -o-animation-name: flipOutY;
   backface-visibility: visible !important;
@@ -46356,7 +46356,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes fadeIn {
+@keyframes fadeIn {
   0% {
     opacity: 0;
   }
@@ -46385,7 +46385,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.fadeIn {
   animation-name: fadeIn;
-  -moz-animation-name: fadeIn;
+  animation-name: fadeIn;
   -o-animation-name: fadeIn;
   animation-name: fadeIn;
 }
@@ -46401,14 +46401,14 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes fadeInUp {
+@keyframes fadeInUp {
   0% {
     opacity: 0;
-    -moz-transform: translateY(20px);
+    transform: translateY(20px);
   }
   100% {
     opacity: 1;
-    -moz-transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
@@ -46436,7 +46436,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.fadeInUp {
   animation-name: fadeInUp;
-  -moz-animation-name: fadeInUp;
+  animation-name: fadeInUp;
   -o-animation-name: fadeInUp;
   animation-name: fadeInUp;
 }
@@ -46452,14 +46452,14 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes fadeInDown {
+@keyframes fadeInDown {
   0% {
     opacity: 0;
-    -moz-transform: translateY(-20px);
+    transform: translateY(-20px);
   }
   100% {
     opacity: 1;
-    -moz-transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
@@ -46487,7 +46487,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.fadeInDown {
   animation-name: fadeInDown;
-  -moz-animation-name: fadeInDown;
+  animation-name: fadeInDown;
   -o-animation-name: fadeInDown;
   animation-name: fadeInDown;
 }
@@ -46503,14 +46503,14 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes fadeInLeft {
+@keyframes fadeInLeft {
   0% {
     opacity: 0;
-    -moz-transform: translateX(-20px);
+    transform: translateX(-20px);
   }
   100% {
     opacity: 1;
-    -moz-transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
@@ -46538,7 +46538,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.fadeInLeft {
   animation-name: fadeInLeft;
-  -moz-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
   -o-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
 }
@@ -46554,14 +46554,14 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes fadeInRight {
+@keyframes fadeInRight {
   0% {
     opacity: 0;
-    -moz-transform: translateX(20px);
+    transform: translateX(20px);
   }
   100% {
     opacity: 1;
-    -moz-transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
@@ -46589,7 +46589,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.fadeInRight {
   animation-name: fadeInRight;
-  -moz-animation-name: fadeInRight;
+  animation-name: fadeInRight;
   -o-animation-name: fadeInRight;
   animation-name: fadeInRight;
 }
@@ -46605,14 +46605,14 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes fadeInUpBig {
+@keyframes fadeInUpBig {
   0% {
     opacity: 0;
-    -moz-transform: translateY(2000px);
+    transform: translateY(2000px);
   }
   100% {
     opacity: 1;
-    -moz-transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
@@ -46640,7 +46640,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.fadeInUpBig {
   animation-name: fadeInUpBig;
-  -moz-animation-name: fadeInUpBig;
+  animation-name: fadeInUpBig;
   -o-animation-name: fadeInUpBig;
   animation-name: fadeInUpBig;
 }
@@ -46656,14 +46656,14 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes fadeInDownBig {
+@keyframes fadeInDownBig {
   0% {
     opacity: 0;
-    -moz-transform: translateY(-2000px);
+    transform: translateY(-2000px);
   }
   100% {
     opacity: 1;
-    -moz-transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
@@ -46691,7 +46691,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.fadeInDownBig {
   animation-name: fadeInDownBig;
-  -moz-animation-name: fadeInDownBig;
+  animation-name: fadeInDownBig;
   -o-animation-name: fadeInDownBig;
   animation-name: fadeInDownBig;
 }
@@ -46707,14 +46707,14 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes fadeInLeftBig {
+@keyframes fadeInLeftBig {
   0% {
     opacity: 0;
-    -moz-transform: translateX(-2000px);
+    transform: translateX(-2000px);
   }
   100% {
     opacity: 1;
-    -moz-transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
@@ -46742,7 +46742,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.fadeInLeftBig {
   animation-name: fadeInLeftBig;
-  -moz-animation-name: fadeInLeftBig;
+  animation-name: fadeInLeftBig;
   -o-animation-name: fadeInLeftBig;
   animation-name: fadeInLeftBig;
 }
@@ -46758,14 +46758,14 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes fadeInRightBig {
+@keyframes fadeInRightBig {
   0% {
     opacity: 0;
-    -moz-transform: translateX(2000px);
+    transform: translateX(2000px);
   }
   100% {
     opacity: 1;
-    -moz-transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
@@ -46793,7 +46793,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.fadeInRightBig {
   animation-name: fadeInRightBig;
-  -moz-animation-name: fadeInRightBig;
+  animation-name: fadeInRightBig;
   -o-animation-name: fadeInRightBig;
   animation-name: fadeInRightBig;
 }
@@ -46807,7 +46807,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes fadeOut {
+@keyframes fadeOut {
   0% {
     opacity: 1;
   }
@@ -46836,7 +46836,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.fadeOut {
   animation-name: fadeOut;
-  -moz-animation-name: fadeOut;
+  animation-name: fadeOut;
   -o-animation-name: fadeOut;
   animation-name: fadeOut;
 }
@@ -46852,14 +46852,14 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes fadeOutUp {
+@keyframes fadeOutUp {
   0% {
     opacity: 1;
-    -moz-transform: translateY(0);
+    transform: translateY(0);
   }
   100% {
     opacity: 0;
-    -moz-transform: translateY(-20px);
+    transform: translateY(-20px);
   }
 }
 
@@ -46887,7 +46887,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.fadeOutUp {
   animation-name: fadeOutUp;
-  -moz-animation-name: fadeOutUp;
+  animation-name: fadeOutUp;
   -o-animation-name: fadeOutUp;
   animation-name: fadeOutUp;
 }
@@ -46903,14 +46903,14 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes fadeOutDown {
+@keyframes fadeOutDown {
   0% {
     opacity: 1;
-    -moz-transform: translateY(0);
+    transform: translateY(0);
   }
   100% {
     opacity: 0;
-    -moz-transform: translateY(20px);
+    transform: translateY(20px);
   }
 }
 
@@ -46938,7 +46938,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.fadeOutDown {
   animation-name: fadeOutDown;
-  -moz-animation-name: fadeOutDown;
+  animation-name: fadeOutDown;
   -o-animation-name: fadeOutDown;
   animation-name: fadeOutDown;
 }
@@ -46954,14 +46954,14 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes fadeOutLeft {
+@keyframes fadeOutLeft {
   0% {
     opacity: 1;
-    -moz-transform: translateX(0);
+    transform: translateX(0);
   }
   100% {
     opacity: 0;
-    -moz-transform: translateX(-20px);
+    transform: translateX(-20px);
   }
 }
 
@@ -46989,7 +46989,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.fadeOutLeft {
   animation-name: fadeOutLeft;
-  -moz-animation-name: fadeOutLeft;
+  animation-name: fadeOutLeft;
   -o-animation-name: fadeOutLeft;
   animation-name: fadeOutLeft;
 }
@@ -47005,14 +47005,14 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes fadeOutRight {
+@keyframes fadeOutRight {
   0% {
     opacity: 1;
-    -moz-transform: translateX(0);
+    transform: translateX(0);
   }
   100% {
     opacity: 0;
-    -moz-transform: translateX(20px);
+    transform: translateX(20px);
   }
 }
 
@@ -47040,7 +47040,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.fadeOutRight {
   animation-name: fadeOutRight;
-  -moz-animation-name: fadeOutRight;
+  animation-name: fadeOutRight;
   -o-animation-name: fadeOutRight;
   animation-name: fadeOutRight;
 }
@@ -47056,14 +47056,14 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes fadeOutUpBig {
+@keyframes fadeOutUpBig {
   0% {
     opacity: 1;
-    -moz-transform: translateY(0);
+    transform: translateY(0);
   }
   100% {
     opacity: 0;
-    -moz-transform: translateY(-2000px);
+    transform: translateY(-2000px);
   }
 }
 
@@ -47091,7 +47091,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.fadeOutUpBig {
   animation-name: fadeOutUpBig;
-  -moz-animation-name: fadeOutUpBig;
+  animation-name: fadeOutUpBig;
   -o-animation-name: fadeOutUpBig;
   animation-name: fadeOutUpBig;
 }
@@ -47107,14 +47107,14 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes fadeOutDownBig {
+@keyframes fadeOutDownBig {
   0% {
     opacity: 1;
-    -moz-transform: translateY(0);
+    transform: translateY(0);
   }
   100% {
     opacity: 0;
-    -moz-transform: translateY(2000px);
+    transform: translateY(2000px);
   }
 }
 
@@ -47142,7 +47142,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.fadeOutDownBig {
   animation-name: fadeOutDownBig;
-  -moz-animation-name: fadeOutDownBig;
+  animation-name: fadeOutDownBig;
   -o-animation-name: fadeOutDownBig;
   animation-name: fadeOutDownBig;
 }
@@ -47158,14 +47158,14 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes fadeOutLeftBig {
+@keyframes fadeOutLeftBig {
   0% {
     opacity: 1;
-    -moz-transform: translateX(0);
+    transform: translateX(0);
   }
   100% {
     opacity: 0;
-    -moz-transform: translateX(-2000px);
+    transform: translateX(-2000px);
   }
 }
 
@@ -47193,7 +47193,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.fadeOutLeftBig {
   animation-name: fadeOutLeftBig;
-  -moz-animation-name: fadeOutLeftBig;
+  animation-name: fadeOutLeftBig;
   -o-animation-name: fadeOutLeftBig;
   animation-name: fadeOutLeftBig;
 }
@@ -47209,14 +47209,14 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes fadeOutRightBig {
+@keyframes fadeOutRightBig {
   0% {
     opacity: 1;
-    -moz-transform: translateX(0);
+    transform: translateX(0);
   }
   100% {
     opacity: 0;
-    -moz-transform: translateX(2000px);
+    transform: translateX(2000px);
   }
 }
 
@@ -47244,7 +47244,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.fadeOutRightBig {
   animation-name: fadeOutRightBig;
-  -moz-animation-name: fadeOutRightBig;
+  animation-name: fadeOutRightBig;
   -o-animation-name: fadeOutRightBig;
   animation-name: fadeOutRightBig;
 }
@@ -47266,20 +47266,20 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes bounceIn {
+@keyframes bounceIn {
   0% {
     opacity: 0;
-    -moz-transform: scale(0.3);
+    transform: scale(0.3);
   }
   50% {
     opacity: 1;
-    -moz-transform: scale(1.05);
+    transform: scale(1.05);
   }
   70% {
-    -moz-transform: scale(0.9);
+    transform: scale(0.9);
   }
   100% {
-    -moz-transform: scale(1);
+    transform: scale(1);
   }
 }
 
@@ -47319,7 +47319,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.bounceIn {
   animation-name: bounceIn;
-  -moz-animation-name: bounceIn;
+  animation-name: bounceIn;
   -o-animation-name: bounceIn;
   animation-name: bounceIn;
 }
@@ -47341,20 +47341,20 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes bounceInUp {
+@keyframes bounceInUp {
   0% {
     opacity: 0;
-    -moz-transform: translateY(2000px);
+    transform: translateY(2000px);
   }
   60% {
     opacity: 1;
-    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
   }
   80% {
-    -moz-transform: translateY(10px);
+    transform: translateY(10px);
   }
   100% {
-    -moz-transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
@@ -47394,7 +47394,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.bounceInUp {
   animation-name: bounceInUp;
-  -moz-animation-name: bounceInUp;
+  animation-name: bounceInUp;
   -o-animation-name: bounceInUp;
   animation-name: bounceInUp;
 }
@@ -47416,20 +47416,20 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes bounceInDown {
+@keyframes bounceInDown {
   0% {
     opacity: 0;
-    -moz-transform: translateY(-2000px);
+    transform: translateY(-2000px);
   }
   60% {
     opacity: 1;
-    -moz-transform: translateY(30px);
+    transform: translateY(30px);
   }
   80% {
-    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
   }
   100% {
-    -moz-transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
@@ -47469,7 +47469,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.bounceInDown {
   animation-name: bounceInDown;
-  -moz-animation-name: bounceInDown;
+  animation-name: bounceInDown;
   -o-animation-name: bounceInDown;
   animation-name: bounceInDown;
 }
@@ -47491,20 +47491,20 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes bounceInLeft {
+@keyframes bounceInLeft {
   0% {
     opacity: 0;
-    -moz-transform: translateX(-2000px);
+    transform: translateX(-2000px);
   }
   60% {
     opacity: 1;
-    -moz-transform: translateX(30px);
+    transform: translateX(30px);
   }
   80% {
-    -moz-transform: translateX(-10px);
+    transform: translateX(-10px);
   }
   100% {
-    -moz-transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
@@ -47544,7 +47544,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.bounceInLeft {
   animation-name: bounceInLeft;
-  -moz-animation-name: bounceInLeft;
+  animation-name: bounceInLeft;
   -o-animation-name: bounceInLeft;
   animation-name: bounceInLeft;
 }
@@ -47566,20 +47566,20 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes bounceInRight {
+@keyframes bounceInRight {
   0% {
     opacity: 0;
-    -moz-transform: translateX(2000px);
+    transform: translateX(2000px);
   }
   60% {
     opacity: 1;
-    -moz-transform: translateX(-30px);
+    transform: translateX(-30px);
   }
   80% {
-    -moz-transform: translateX(10px);
+    transform: translateX(10px);
   }
   100% {
-    -moz-transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
@@ -47619,7 +47619,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.bounceInRight {
   animation-name: bounceInRight;
-  -moz-animation-name: bounceInRight;
+  animation-name: bounceInRight;
   -o-animation-name: bounceInRight;
   animation-name: bounceInRight;
 }
@@ -47641,20 +47641,20 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes bounceOut {
+@keyframes bounceOut {
   0% {
-    -moz-transform: scale(1);
+    transform: scale(1);
   }
   25% {
-    -moz-transform: scale(0.95);
+    transform: scale(0.95);
   }
   50% {
     opacity: 1;
-    -moz-transform: scale(1.1);
+    transform: scale(1.1);
   }
   100% {
     opacity: 0;
-    -moz-transform: scale(0.3);
+    transform: scale(0.3);
   }
 }
 
@@ -47694,7 +47694,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.bounceOut {
   animation-name: bounceOut;
-  -moz-animation-name: bounceOut;
+  animation-name: bounceOut;
   -o-animation-name: bounceOut;
   animation-name: bounceOut;
 }
@@ -47713,17 +47713,17 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes bounceOutUp {
+@keyframes bounceOutUp {
   0% {
-    -moz-transform: translateY(0);
+    transform: translateY(0);
   }
   20% {
     opacity: 1;
-    -moz-transform: translateY(20px);
+    transform: translateY(20px);
   }
   100% {
     opacity: 0;
-    -moz-transform: translateY(-2000px);
+    transform: translateY(-2000px);
   }
 }
 
@@ -47757,7 +47757,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.bounceOutUp {
   animation-name: bounceOutUp;
-  -moz-animation-name: bounceOutUp;
+  animation-name: bounceOutUp;
   -o-animation-name: bounceOutUp;
   animation-name: bounceOutUp;
 }
@@ -47776,17 +47776,17 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes bounceOutDown {
+@keyframes bounceOutDown {
   0% {
-    -moz-transform: translateY(0);
+    transform: translateY(0);
   }
   20% {
     opacity: 1;
-    -moz-transform: translateY(-20px);
+    transform: translateY(-20px);
   }
   100% {
     opacity: 0;
-    -moz-transform: translateY(2000px);
+    transform: translateY(2000px);
   }
 }
 
@@ -47820,7 +47820,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.bounceOutDown {
   animation-name: bounceOutDown;
-  -moz-animation-name: bounceOutDown;
+  animation-name: bounceOutDown;
   -o-animation-name: bounceOutDown;
   animation-name: bounceOutDown;
 }
@@ -47839,17 +47839,17 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes bounceOutLeft {
+@keyframes bounceOutLeft {
   0% {
-    -moz-transform: translateX(0);
+    transform: translateX(0);
   }
   20% {
     opacity: 1;
-    -moz-transform: translateX(20px);
+    transform: translateX(20px);
   }
   100% {
     opacity: 0;
-    -moz-transform: translateX(-2000px);
+    transform: translateX(-2000px);
   }
 }
 
@@ -47883,7 +47883,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.bounceOutLeft {
   animation-name: bounceOutLeft;
-  -moz-animation-name: bounceOutLeft;
+  animation-name: bounceOutLeft;
   -o-animation-name: bounceOutLeft;
   animation-name: bounceOutLeft;
 }
@@ -47902,17 +47902,17 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes bounceOutRight {
+@keyframes bounceOutRight {
   0% {
-    -moz-transform: translateX(0);
+    transform: translateX(0);
   }
   20% {
     opacity: 1;
-    -moz-transform: translateX(-20px);
+    transform: translateX(-20px);
   }
   100% {
     opacity: 0;
-    -moz-transform: translateX(2000px);
+    transform: translateX(2000px);
   }
 }
 
@@ -47946,7 +47946,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.bounceOutRight {
   animation-name: bounceOutRight;
-  -moz-animation-name: bounceOutRight;
+  animation-name: bounceOutRight;
   -o-animation-name: bounceOutRight;
   animation-name: bounceOutRight;
 }
@@ -47964,15 +47964,15 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes rotateIn {
+@keyframes rotateIn {
   0% {
-    -moz-transform-origin: center center;
-    -moz-transform: rotate(-200deg);
+    transform-origin: center center;
+    transform: rotate(-200deg);
     opacity: 0;
   }
   100% {
-    -moz-transform-origin: center center;
-    -moz-transform: rotate(0);
+    transform-origin: center center;
+    transform: rotate(0);
     opacity: 1;
   }
 }
@@ -48005,7 +48005,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.rotateIn {
   animation-name: rotateIn;
-  -moz-animation-name: rotateIn;
+  animation-name: rotateIn;
   -o-animation-name: rotateIn;
   animation-name: rotateIn;
 }
@@ -48023,15 +48023,15 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes rotateInUpLeft {
+@keyframes rotateInUpLeft {
   0% {
-    -moz-transform-origin: left bottom;
-    -moz-transform: rotate(90deg);
+    transform-origin: left bottom;
+    transform: rotate(90deg);
     opacity: 0;
   }
   100% {
-    -moz-transform-origin: left bottom;
-    -moz-transform: rotate(0);
+    transform-origin: left bottom;
+    transform: rotate(0);
     opacity: 1;
   }
 }
@@ -48064,7 +48064,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.rotateInUpLeft {
   animation-name: rotateInUpLeft;
-  -moz-animation-name: rotateInUpLeft;
+  animation-name: rotateInUpLeft;
   -o-animation-name: rotateInUpLeft;
   animation-name: rotateInUpLeft;
 }
@@ -48082,15 +48082,15 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes rotateInDownLeft {
+@keyframes rotateInDownLeft {
   0% {
-    -moz-transform-origin: left bottom;
-    -moz-transform: rotate(-90deg);
+    transform-origin: left bottom;
+    transform: rotate(-90deg);
     opacity: 0;
   }
   100% {
-    -moz-transform-origin: left bottom;
-    -moz-transform: rotate(0);
+    transform-origin: left bottom;
+    transform: rotate(0);
     opacity: 1;
   }
 }
@@ -48123,7 +48123,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.rotateInDownLeft {
   animation-name: rotateInDownLeft;
-  -moz-animation-name: rotateInDownLeft;
+  animation-name: rotateInDownLeft;
   -o-animation-name: rotateInDownLeft;
   animation-name: rotateInDownLeft;
 }
@@ -48141,15 +48141,15 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes rotateInUpRight {
+@keyframes rotateInUpRight {
   0% {
-    -moz-transform-origin: right bottom;
-    -moz-transform: rotate(-90deg);
+    transform-origin: right bottom;
+    transform: rotate(-90deg);
     opacity: 0;
   }
   100% {
-    -moz-transform-origin: right bottom;
-    -moz-transform: rotate(0);
+    transform-origin: right bottom;
+    transform: rotate(0);
     opacity: 1;
   }
 }
@@ -48182,7 +48182,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.rotateInUpRight {
   animation-name: rotateInUpRight;
-  -moz-animation-name: rotateInUpRight;
+  animation-name: rotateInUpRight;
   -o-animation-name: rotateInUpRight;
   animation-name: rotateInUpRight;
 }
@@ -48200,15 +48200,15 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes rotateInDownRight {
+@keyframes rotateInDownRight {
   0% {
-    -moz-transform-origin: right bottom;
-    -moz-transform: rotate(90deg);
+    transform-origin: right bottom;
+    transform: rotate(90deg);
     opacity: 0;
   }
   100% {
-    -moz-transform-origin: right bottom;
-    -moz-transform: rotate(0);
+    transform-origin: right bottom;
+    transform: rotate(0);
     opacity: 1;
   }
 }
@@ -48241,7 +48241,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.rotateInDownRight {
   animation-name: rotateInDownRight;
-  -moz-animation-name: rotateInDownRight;
+  animation-name: rotateInDownRight;
   -o-animation-name: rotateInDownRight;
   animation-name: rotateInDownRight;
 }
@@ -48259,15 +48259,15 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes rotateOut {
+@keyframes rotateOut {
   0% {
-    -moz-transform-origin: center center;
-    -moz-transform: rotate(0);
+    transform-origin: center center;
+    transform: rotate(0);
     opacity: 1;
   }
   100% {
-    -moz-transform-origin: center center;
-    -moz-transform: rotate(200deg);
+    transform-origin: center center;
+    transform: rotate(200deg);
     opacity: 0;
   }
 }
@@ -48300,7 +48300,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.rotateOut {
   animation-name: rotateOut;
-  -moz-animation-name: rotateOut;
+  animation-name: rotateOut;
   -o-animation-name: rotateOut;
   animation-name: rotateOut;
 }
@@ -48318,15 +48318,15 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes rotateOutUpLeft {
+@keyframes rotateOutUpLeft {
   0% {
-    -moz-transform-origin: left bottom;
-    -moz-transform: rotate(0);
+    transform-origin: left bottom;
+    transform: rotate(0);
     opacity: 1;
   }
   100% {
-    -moz-transform-origin: left bottom;
-    -moz-transform: rotate(-90deg);
+    transform-origin: left bottom;
+    transform: rotate(-90deg);
     opacity: 0;
   }
 }
@@ -48359,7 +48359,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.rotateOutUpLeft {
   animation-name: rotateOutUpLeft;
-  -moz-animation-name: rotateOutUpLeft;
+  animation-name: rotateOutUpLeft;
   -o-animation-name: rotateOutUpLeft;
   animation-name: rotateOutUpLeft;
 }
@@ -48377,15 +48377,15 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes rotateOutDownLeft {
+@keyframes rotateOutDownLeft {
   0% {
-    -moz-transform-origin: left bottom;
-    -moz-transform: rotate(0);
+    transform-origin: left bottom;
+    transform: rotate(0);
     opacity: 1;
   }
   100% {
-    -moz-transform-origin: left bottom;
-    -moz-transform: rotate(90deg);
+    transform-origin: left bottom;
+    transform: rotate(90deg);
     opacity: 0;
   }
 }
@@ -48418,7 +48418,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.rotateOutDownLeft {
   animation-name: rotateOutDownLeft;
-  -moz-animation-name: rotateOutDownLeft;
+  animation-name: rotateOutDownLeft;
   -o-animation-name: rotateOutDownLeft;
   animation-name: rotateOutDownLeft;
 }
@@ -48436,15 +48436,15 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes rotateOutUpRight {
+@keyframes rotateOutUpRight {
   0% {
-    -moz-transform-origin: right bottom;
-    -moz-transform: rotate(0);
+    transform-origin: right bottom;
+    transform: rotate(0);
     opacity: 1;
   }
   100% {
-    -moz-transform-origin: right bottom;
-    -moz-transform: rotate(90deg);
+    transform-origin: right bottom;
+    transform: rotate(90deg);
     opacity: 0;
   }
 }
@@ -48477,7 +48477,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.rotateOutUpRight {
   animation-name: rotateOutUpRight;
-  -moz-animation-name: rotateOutUpRight;
+  animation-name: rotateOutUpRight;
   -o-animation-name: rotateOutUpRight;
   animation-name: rotateOutUpRight;
 }
@@ -48495,15 +48495,15 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes rotateOutDownRight {
+@keyframes rotateOutDownRight {
   0% {
-    -moz-transform-origin: right bottom;
-    -moz-transform: rotate(0);
+    transform-origin: right bottom;
+    transform: rotate(0);
     opacity: 1;
   }
   100% {
-    -moz-transform-origin: right bottom;
-    -moz-transform: rotate(-90deg);
+    transform-origin: right bottom;
+    transform: rotate(-90deg);
     opacity: 0;
   }
 }
@@ -48536,7 +48536,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.rotateOutDownRight {
   animation-name: rotateOutDownRight;
-  -moz-animation-name: rotateOutDownRight;
+  animation-name: rotateOutDownRight;
   -o-animation-name: rotateOutDownRight;
   animation-name: rotateOutDownRight;
 }
@@ -48570,31 +48570,31 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes hinge {
+@keyframes hinge {
   0% {
-    -moz-transform: rotate(0);
-    -moz-transform-origin: top left;
-    -moz-animation-timing-function: ease-in-out;
+    transform: rotate(0);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
   }
   20%,
   60% {
-    -moz-transform: rotate(80deg);
-    -moz-transform-origin: top left;
-    -moz-animation-timing-function: ease-in-out;
+    transform: rotate(80deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
   }
   40% {
-    -moz-transform: rotate(60deg);
-    -moz-transform-origin: top left;
-    -moz-animation-timing-function: ease-in-out;
+    transform: rotate(60deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
   }
   80% {
-    -moz-transform: rotate(60deg) translateY(0);
+    transform: rotate(60deg) translateY(0);
     opacity: 1;
-    -moz-transform-origin: top left;
-    -moz-animation-timing-function: ease-in-out;
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
   }
   100% {
-    -moz-transform: translateY(700px);
+    transform: translateY(700px);
     opacity: 0;
   }
 }
@@ -48659,7 +48659,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.hinge {
   animation-name: hinge;
-  -moz-animation-name: hinge;
+  animation-name: hinge;
   -o-animation-name: hinge;
   animation-name: hinge;
 }
@@ -48675,14 +48675,14 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes rollIn {
+@keyframes rollIn {
   0% {
     opacity: 0;
-    -moz-transform: translateX(-100%) rotate(-120deg);
+    transform: translateX(-100%) rotate(-120deg);
   }
   100% {
     opacity: 1;
-    -moz-transform: translateX(0) rotate(0);
+    transform: translateX(0) rotate(0);
   }
 }
 
@@ -48710,7 +48710,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.rollIn {
   animation-name: rollIn;
-  -moz-animation-name: rollIn;
+  animation-name: rollIn;
   -o-animation-name: rollIn;
   animation-name: rollIn;
 }
@@ -48726,14 +48726,14 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes rollOut {
+@keyframes rollOut {
   0% {
     opacity: 1;
-    -moz-transform: translateX(0) rotate(0);
+    transform: translateX(0) rotate(0);
   }
   100% {
     opacity: 0;
-    -moz-transform: translateX(100%) rotate(120deg);
+    transform: translateX(100%) rotate(120deg);
   }
 }
 
@@ -48761,7 +48761,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.rollOut {
   animation-name: rollOut;
-  -moz-animation-name: rollOut;
+  animation-name: rollOut;
   -o-animation-name: rollOut;
   animation-name: rollOut;
 }
@@ -48785,21 +48785,21 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes lightSpeedIn {
+@keyframes lightSpeedIn {
   0% {
-    -moz-transform: translateX(100%) skewX(-30deg);
+    transform: translateX(100%) skewX(-30deg);
     opacity: 0;
   }
   60% {
-    -moz-transform: translateX(-20%) skewX(30deg);
+    transform: translateX(-20%) skewX(30deg);
     opacity: 1;
   }
   80% {
-    -moz-transform: translateX(0) skewX(-15deg);
+    transform: translateX(0) skewX(-15deg);
     opacity: 1;
   }
   100% {
-    -moz-transform: translateX(0) skewX(0);
+    transform: translateX(0) skewX(0);
     opacity: 1;
   }
 }
@@ -48844,18 +48844,18 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.lightSpeedIn {
   animation-name: lightSpeedIn;
-  -moz-animation-name: lightSpeedIn;
+  animation-name: lightSpeedIn;
   -o-animation-name: lightSpeedIn;
   animation-name: lightSpeedIn;
   animation-timing-function: ease-out;
-  -moz-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
   -o-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
 }
 
 .animated.lightSpeedIn {
   animation-duration: 0.5s;
-  -moz-animation-duration: 0.5s;
+  animation-duration: 0.5s;
   -o-animation-duration: 0.5s;
   animation-duration: 0.5s;
 }
@@ -48871,13 +48871,13 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes lightSpeedOut {
+@keyframes lightSpeedOut {
   0% {
-    -moz-transform: translateX(0) skewX(0);
+    transform: translateX(0) skewX(0);
     opacity: 1;
   }
   100% {
-    -moz-transform: translateX(100%) skewX(-30deg);
+    transform: translateX(100%) skewX(-30deg);
     opacity: 0;
   }
 }
@@ -48906,18 +48906,18 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.lightSpeedOut {
   animation-name: lightSpeedOut;
-  -moz-animation-name: lightSpeedOut;
+  animation-name: lightSpeedOut;
   -o-animation-name: lightSpeedOut;
   animation-name: lightSpeedOut;
   animation-timing-function: ease-in;
-  -moz-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
   -o-animation-timing-function: ease-in;
   animation-timing-function: ease-in;
 }
 
 .animated.lightSpeedOut {
   animation-duration: 0.25s;
-  -moz-animation-duration: 0.25s;
+  animation-duration: 0.25s;
   -o-animation-duration: 0.25s;
   animation-duration: 0.25s;
 }
@@ -48958,39 +48958,39 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes wiggle {
+@keyframes wiggle {
   0% {
-    -moz-transform: skewX(9deg);
+    transform: skewX(9deg);
   }
   10% {
-    -moz-transform: skewX(-8deg);
+    transform: skewX(-8deg);
   }
   20% {
-    -moz-transform: skewX(7deg);
+    transform: skewX(7deg);
   }
   30% {
-    -moz-transform: skewX(-6deg);
+    transform: skewX(-6deg);
   }
   40% {
-    -moz-transform: skewX(5deg);
+    transform: skewX(5deg);
   }
   50% {
-    -moz-transform: skewX(-4deg);
+    transform: skewX(-4deg);
   }
   60% {
-    -moz-transform: skewX(3deg);
+    transform: skewX(3deg);
   }
   70% {
-    -moz-transform: skewX(-2deg);
+    transform: skewX(-2deg);
   }
   80% {
-    -moz-transform: skewX(1deg);
+    transform: skewX(1deg);
   }
   90% {
-    -moz-transform: skewX(0);
+    transform: skewX(0);
   }
   100% {
-    -moz-transform: skewX(0);
+    transform: skewX(0);
   }
 }
 
@@ -49068,25 +49068,25 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.wiggle {
   animation-name: wiggle;
-  -moz-animation-name: wiggle;
+  animation-name: wiggle;
   -o-animation-name: wiggle;
   animation-name: wiggle;
   animation-timing-function: ease-in;
-  -moz-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
   -o-animation-timing-function: ease-in;
   animation-timing-function: ease-in;
 }
 
 .animated.wiggle {
   animation-duration: 0.75s;
-  -moz-animation-duration: 0.75s;
+  animation-duration: 0.75s;
   -o-animation-duration: 0.75s;
   animation-duration: 0.75s;
 }
 
 .animated.fade {
   animation-name: fade;
-  -moz-animation-name: fade;
+  animation-name: fade;
   -o-animation-name: fade;
   animation-name: fade;
 }
@@ -49100,7 +49100,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes fade {
+@keyframes fade {
   0% {
     opacity: 1;
   }
@@ -49129,7 +49129,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.appear {
   animation-name: appear;
-  -moz-animation-name: appear;
+  animation-name: appear;
   -o-animation-name: appear;
   animation-name: appear;
 }
@@ -49143,7 +49143,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes appear {
+@keyframes appear {
   0% {
     opacity: 0;
   }
@@ -49172,7 +49172,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.spinner {
   animation-name: spinner;
-  -moz-animation-name: spinner;
+  animation-name: spinner;
   -o-animation-name: spinner;
   animation-name: spinner;
 }
@@ -49186,12 +49186,12 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes spinner {
+@keyframes spinner {
   0% {
-    -moz-transform: rotate(0);
+    transform: rotate(0);
   }
   100% {
-    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -49215,7 +49215,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.twirlIn {
   animation-name: twirlIn;
-  -moz-animation-name: twirlIn;
+  animation-name: twirlIn;
   -o-animation-name: twirlIn;
   animation-name: twirlIn;
 }
@@ -49229,12 +49229,12 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes twirlIn {
+@keyframes twirlIn {
   0% {
-    -moz-transform: rotate3d(80, 70, 10, 180deg);
+    transform: rotate3d(80, 70, 10, 180deg);
   }
   100% {
-    -moz-transform: rotate3d(0, 0, 0, 0deg);
+    transform: rotate3d(0, 0, 0, 0deg);
   }
 }
 
@@ -49258,7 +49258,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
 
 .animated.twirlOut {
   animation-name: twirlOut;
-  -moz-animation-name: twirlOut;
+  animation-name: twirlOut;
   -o-animation-name: twirlOut;
   animation-name: twirlOut;
 }
@@ -49272,12 +49272,12 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
 }
 
-@-moz-keyframes twirlOut {
+@keyframes twirlOut {
   0% {
-    -moz-transform: rotate3d(0, 0, 0, 0deg);
+    transform: rotate3d(0, 0, 0, 0deg);
   }
   100% {
-    -moz-transform: rotate3d(80, 70, 10, 180deg);
+    transform: rotate3d(80, 70, 10, 180deg);
   }
 }
 
@@ -49365,9 +49365,9 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   opacity: 0.8;
   overflow: hidden;
   display: none;
-  -moz-opacity: 0.8;
+  opacity: 0.8;
   box-sizing: border-box;
-  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -49461,7 +49461,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   outline: 0;
   display: none;
   box-sizing: content-box;
-  -moz-box-sizing: content-box;
+  box-sizing: content-box;
   box-sizing: content-box;
 }
 
@@ -49471,10 +49471,10 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   height: 100%;
   background: #fff;
   box-sizing: content-box;
-  -moz-box-sizing: content-box;
+  box-sizing: content-box;
   box-sizing: content-box;
   border-radius: 4px;
-  -moz-border-radius: 4px;
+  border-radius: 4px;
   border-radius: 4px;
 }
 
@@ -49488,10 +49488,10 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   z-index: 2102;
   border: 0 solid #fff;
   box-sizing: content-box;
-  -moz-box-sizing: content-box;
+  box-sizing: content-box;
   box-sizing: content-box;
   border-radius: 4px;
-  -moz-border-radius: 4px;
+  border-radius: 4px;
   border-radius: 4px;
 }
 
@@ -49916,24 +49916,24 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
     top: 0;
     left: 0;
     transform: translateY(0);
-    -moz-transform: translateY(0);
+    transform: translateY(0);
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
     transform: translateY(0);
     transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
   }
   #ABdev_main_header.menu_up {
     transform: translateY(-66px);
-    -moz-transform: translateY(-66px);
+    transform: translateY(-66px);
     -ms-transform: translateY(-66px);
     -o-transform: translateY(-66px);
     transform: translateY(-66px);
     transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
@@ -49957,7 +49957,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
     width: 50px;
     height: 50px;
     transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
     -ms-transition: all 0.25s ease-in-out;
     -o-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
@@ -49968,7 +49968,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
   .menu_slide_toggle.menu_opened .icon-menu {
     transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
     -ms-transition: all 0.25s ease-in-out;
     -o-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
@@ -49976,14 +49976,14 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
   .menu_slide_toggle.menu_opened .icon-menu:before {
     transform: rotateZ(-45deg) scaleX(1) translate(-3px, -2px);
-    -moz-transform: rotateZ(-45deg) scaleX(1) translate(-3px, -2px);
+    transform: rotateZ(-45deg) scaleX(1) translate(-3px, -2px);
     -ms-transform: rotateZ(-45deg) scaleX(1) translate(-3px, -2px);
     -o-transform: rotateZ(-45deg) scaleX(1) translate(-3px, -2px);
     transform: rotateZ(-45deg) scaleX(1) translate(-3px, -2px);
   }
   .menu_slide_toggle.menu_opened .icon-menu:after {
     transform: rotateZ(45deg) scaleX(1) translate(-3px, 2px);
-    -moz-transform: rotateZ(45deg) scaleX(1) translate(-3px, 2px);
+    transform: rotateZ(45deg) scaleX(1) translate(-3px, 2px);
     -ms-transform: rotateZ(45deg) scaleX(1) translate(-3px, 2px);
     -o-transform: rotateZ(45deg) scaleX(1) translate(-3px, 2px);
     transform: rotateZ(45deg) scaleX(1) translate(-3px, 2px);
@@ -50627,7 +50627,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   .woocommerce ul.cart_list li:hover .star-rating,
   .woocommerce ul.product_list_widget li:hover .star-rating {
     transform: translateX(150px);
-    -moz-transform: translateX(150px);
+    transform: translateX(150px);
     -ms-transform: translateX(150px);
     -o-transform: translateX(150px);
     transform: translateX(150px);
@@ -50689,24 +50689,24 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
     top: 0;
     left: 0;
     transform: translateY(0);
-    -moz-transform: translateY(0);
+    transform: translateY(0);
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
     transform: translateY(0);
     transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
   }
   #ABdev_main_header.menu_up {
     transform: translateY(-66px);
-    -moz-transform: translateY(-66px);
+    transform: translateY(-66px);
     -ms-transform: translateY(-66px);
     -o-transform: translateY(-66px);
     transform: translateY(-66px);
     transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
@@ -50730,7 +50730,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
     width: 50px;
     height: 50px;
     transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
     -ms-transition: all 0.25s ease-in-out;
     -o-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
@@ -50741,7 +50741,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
   .menu_slide_toggle.menu_opened .icon-menu {
     transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
     -ms-transition: all 0.25s ease-in-out;
     -o-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
@@ -50749,14 +50749,14 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
   .menu_slide_toggle.menu_opened .icon-menu:before {
     transform: rotateZ(-45deg) scaleX(1) translate(-3px, -2px);
-    -moz-transform: rotateZ(-45deg) scaleX(1) translate(-3px, -2px);
+    transform: rotateZ(-45deg) scaleX(1) translate(-3px, -2px);
     -ms-transform: rotateZ(-45deg) scaleX(1) translate(-3px, -2px);
     -o-transform: rotateZ(-45deg) scaleX(1) translate(-3px, -2px);
     transform: rotateZ(-45deg) scaleX(1) translate(-3px, -2px);
   }
   .menu_slide_toggle.menu_opened .icon-menu:after {
     transform: rotateZ(45deg) scaleX(1) translate(-3px, 2px);
-    -moz-transform: rotateZ(45deg) scaleX(1) translate(-3px, 2px);
+    transform: rotateZ(45deg) scaleX(1) translate(-3px, 2px);
     -ms-transform: rotateZ(45deg) scaleX(1) translate(-3px, 2px);
     -o-transform: rotateZ(45deg) scaleX(1) translate(-3px, 2px);
     transform: rotateZ(45deg) scaleX(1) translate(-3px, 2px);
@@ -51522,24 +51522,24 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
     top: 0;
     left: 0;
     transform: translateY(0);
-    -moz-transform: translateY(0);
+    transform: translateY(0);
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
     transform: translateY(0);
     transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
   }
   #ABdev_main_header.menu_up {
     transform: translateY(-66px);
-    -moz-transform: translateY(-66px);
+    transform: translateY(-66px);
     -ms-transform: translateY(-66px);
     -o-transform: translateY(-66px);
     transform: translateY(-66px);
     transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
@@ -51563,7 +51563,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
     width: 50px;
     height: 50px;
     transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
     -ms-transition: all 0.25s ease-in-out;
     -o-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
@@ -51574,7 +51574,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
   .menu_slide_toggle.menu_opened .icon-menu {
     transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
     -ms-transition: all 0.25s ease-in-out;
     -o-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
@@ -51582,14 +51582,14 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   }
   .menu_slide_toggle.menu_opened .icon-menu:before {
     transform: rotateZ(-45deg) scaleX(1) translate(-3px, -2px);
-    -moz-transform: rotateZ(-45deg) scaleX(1) translate(-3px, -2px);
+    transform: rotateZ(-45deg) scaleX(1) translate(-3px, -2px);
     -ms-transform: rotateZ(-45deg) scaleX(1) translate(-3px, -2px);
     -o-transform: rotateZ(-45deg) scaleX(1) translate(-3px, -2px);
     transform: rotateZ(-45deg) scaleX(1) translate(-3px, -2px);
   }
   .menu_slide_toggle.menu_opened .icon-menu:after {
     transform: rotateZ(45deg) scaleX(1) translate(-3px, 2px);
-    -moz-transform: rotateZ(45deg) scaleX(1) translate(-3px, 2px);
+    transform: rotateZ(45deg) scaleX(1) translate(-3px, 2px);
     -ms-transform: rotateZ(45deg) scaleX(1) translate(-3px, 2px);
     -o-transform: rotateZ(45deg) scaleX(1) translate(-3px, 2px);
     transform: rotateZ(45deg) scaleX(1) translate(-3px, 2px);

@@ -10,10 +10,11 @@ export const MyProfileSlice = createSlice({
       const handlePutUser = async () => {
         const response = await UserApi.changeProfile(action.payload);
         if (response) {
+          localStorage.setItem("user", JSON.stringify(response.data));
           window.location.reload();
+          window.scrollTo(0, 0);
         }
       };
-
       handlePutUser();
     },
   },

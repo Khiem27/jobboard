@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Loading from "./Loading";
-import "./Page404.scoped.css";
+import "./Page404.css";
+
 Page404.propTypes = {};
 
 function Page404() {
@@ -53,9 +55,9 @@ function Page404() {
                     </div>
                   </div>
                   <div className="homepageLink">
-                    <a href="https://www.mantralabsglobal.com/" target="_self">
+                    <Link to="/" target="_self">
                       Home Page
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

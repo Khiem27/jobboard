@@ -4,6 +4,8 @@ Header.propTypes = {};
 
 function Header() {
   const [userName, setUserName] = useState([]);
+  const [active, setActive] = useState(false);
+  const [activeMenu, setActiveMenu] = useState(0);
   useEffect(() => {
     const userData: any = localStorage.getItem("user");
     const userDataParse = JSON.parse(userData);
@@ -12,6 +14,13 @@ function Header() {
   const handleLogout = () => {
     localStorage.setItem("user", JSON.stringify(""));
     window.location.href = "/login";
+  };
+  const handleMenu = () => {
+    setActive(!active);
+  };
+
+  const handleSubMenu = (index: any) => {
+    setActiveMenu(index);
   };
   return (
     <header className="site-header mo-left header fullwidth">
@@ -28,6 +37,7 @@ function Header() {
               </Link>
             </div>
             <button
+              onClick={handleMenu}
               className="navbar-toggler collapsed navicon  justify-content-end"
               type="button"
               data-toggle="collapse"
@@ -63,7 +73,11 @@ function Header() {
               </div>
             </div>
             <div
-              className="header-nav navbar-collapse collapse myNavbar justify-content-start"
+              className={
+                active
+                  ? "header-nav navbar-collapse collapse myNavbar justify-content-start show"
+                  : "header-nav navbar-collapse collapse myNavbar justify-content-start"
+              }
               id="navbarNavDropdown"
             >
               <div className="logo-header mostion d-md-block d-lg-none">
@@ -75,25 +89,17 @@ function Header() {
                 </Link>
               </div>
               <ul className="nav navbar-nav">
-                <li className="">
-                  <Link to="/">
-                    Home <i className="fa fa-chevron-down"></i>
-                  </Link>
-                  <ul className="sub-menu">
-                    <li>
-                      <Link className="dez-page" to="/">
-                        Home 1
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="dez-page" to="/index-2">
-                        Home 2
-                      </Link>
-                    </li>
-                  </ul>
+                <li
+                  onClick={() => handleSubMenu(1)}
+                  className={activeMenu === 1 ? "open" : ""}
+                >
+                  <Link to="/">Home</Link>
                 </li>
-                <li>
-                  <Link to="/">
+                <li
+                  onClick={() => handleSubMenu(2)}
+                  className={activeMenu === 2 ? "open" : ""}
+                >
+                  <Link to="#">
                     For Candidates <i className="fa fa-chevron-down"></i>
                   </Link>
                   <ul className="sub-menu">
@@ -134,7 +140,10 @@ function Header() {
                     </li>
                   </ul>
                 </li>
-                <li>
+                <li
+                  onClick={() => handleSubMenu(3)}
+                  className={activeMenu === 3 ? "open" : ""}
+                >
                   <Link to="/">
                     For Employers <i className="fa fa-chevron-down"></i>
                   </Link>
@@ -171,7 +180,10 @@ function Header() {
                     </li>
                   </ul>
                 </li>
-                <li>
+                <li
+                  onClick={() => handleSubMenu(4)}
+                  className={activeMenu === 4 ? "open" : ""}
+                >
                   <Link to="/">
                     Pages <i className="fa fa-chevron-down"></i>
                   </Link>
@@ -196,117 +208,28 @@ function Header() {
                         free job alerts <span className="new-page">New</span>
                       </Link>
                     </li>
-                    <li>
-                      <Link className="dez-page" to="/">
-                        Browse Job <i className="fa fa-angle-right"></i>
+                    <li
+                      onClick={() => handleSubMenu(6)}
+                      className={activeMenu === 6 ? "open" : ""}
+                    >
+                      <Link className="dez-page" to="#">
+                        Browse Job
                       </Link>
-                      <ul className="sub-menu">
-                        <li>
-                          <Link className="dez-page" to="/browse-job-list">
-                            browse job list
-                          </Link>
-                        </li>
-                        <li>
-                          <Link className="dez-page" to="/browse-job-grid">
-                            browse job grid{" "}
-                            <span className="new-page">New</span>
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            className="dez-page"
-                            to="/browse-job-filter-list"
-                          >
-                            browse filter list{" "}
-                            <span className="new-page">New</span>
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            className="dez-page"
-                            to="/browse-job-filter-grid"
-                          >
-                            browse filter grid{" "}
-                            <span className="new-page">New</span>
-                          </Link>
-                        </li>
-                      </ul>
                     </li>
                     <li>
                       <Link className="dez-page" to="/">
-                        Jobs<i className="fa fa-angle-right"></i>
+                        Jobs
                       </Link>
-                      <ul className="sub-menu">
-                        <li>
-                          <Link className="dez-page" to="/category-all-jobs">
-                            all jobs <span className="new-page">New</span>
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            className="dez-page"
-                            to="/category-company-jobs"
-                          >
-                            company jobs <span className="new-page">New</span>
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            className="dez-page"
-                            to="/category-designations-jobs"
-                          >
-                            designations jobs{" "}
-                            <span className="new-page">New</span>
-                          </Link>
-                        </li>
-                        <li>
-                          <Link className="dez-page" to="/category-jobs">
-                            category jobs <span className="new-page">New</span>
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            className="dez-page"
-                            to="/category-location-jobs"
-                          >
-                            location jobs <span className="new-page">New</span>
-                          </Link>
-                        </li>
-                        <li>
-                          <Link className="dez-page" to="/category-skill-jobs">
-                            skill jobs <span className="new-page">New</span>
-                          </Link>
-                        </li>
-                      </ul>
                     </li>
                     <li>
                       <Link className="dez-page" to="/">
-                        Portfolio <i className="fa fa-angle-right"></i>
+                        Portfolio
                       </Link>
-                      <ul className="sub-menu">
-                        <li>
-                          <Link className="dez-page" to="/portfolio-grid-2">
-                            Portfolio Grid 2{" "}
-                          </Link>
-                        </li>
-                      </ul>
                     </li>
                     <li>
                       <Link className="dez-page" to="/">
-                        register <i className="fa fa-angle-right"></i>
+                        register
                       </Link>
-                      <ul className="sub-menu">
-                        <li>
-                          <Link className="dez-page" to="/register">
-                            register 1
-                          </Link>
-                        </li>
-                        <li>
-                          <Link className="dez-page" to="/register-2">
-                            register 2 <span className="new-page">New</span>
-                          </Link>
-                        </li>
-                      </ul>
                     </li>
                     <li>
                       <Link className="dez-page" to="/error-404">
@@ -320,7 +243,10 @@ function Header() {
                     </li>
                   </ul>
                 </li>
-                <li>
+                <li
+                  onClick={() => handleSubMenu(6)}
+                  className={activeMenu === 6 ? "open" : ""}
+                >
                   <Link to="/">
                     Blog <i className="fa fa-chevron-down"></i>
                   </Link>
@@ -333,34 +259,6 @@ function Header() {
                     <li>
                       <Link className="dez-page" to="/post-blog">
                         Post Blog
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="dez-page" to="/blog-classic-sidebar">
-                        Classic Sidebar
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="dez-page" to="/blog-detailed-grid">
-                        Detailed Grid
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        className="dez-page"
-                        to="/blog-detailed-grid-sidebar"
-                      >
-                        Detailed Grid Sidebar
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="dez-page" to="/blog-left-img">
-                        Left Image Sidebar
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="dez-page" to="/blog-details">
-                        Blog Details
                       </Link>
                     </li>
                   </ul>
