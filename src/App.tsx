@@ -21,6 +21,7 @@ import BlogDetailsLayout from "./Layout/Blog/BlogDetails/BlogDetailsLayout";
 import PostBlogLayout from "./Layout/Blog/PostBlogLayout/PostBlogLayout";
 import MyProfileLayout from "./Layout/ForCandidates/MyProfile/MyProfileLayout";
 import Home from "./Layout/Home/Home";
+import ResumeLayout from "./Layout/Resume/ResumeLayout";
 
 function App() {
   return (
@@ -65,6 +66,15 @@ function App() {
           element={
             <RequireAuth>
               <BlogDetailsLayout />
+            </RequireAuth>
+          }
+        />
+
+        <Route
+          path="/jobs-my-resume"
+          element={
+            <RequireAuth>
+              <ResumeLayout />
             </RequireAuth>
           }
         />

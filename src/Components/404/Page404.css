@@ -26441,39 +26441,6 @@ span.blogs-arrow:after {
   margin: 0 6% 0 -6;
 }
 
-.close {
-  position: absolute;
-  right: -5px;
-  top: -30px;
-  cursor: pointer;
-  width: 20px;
-  height: 20px;
-}
-
-.close:hover {
-  zoom: 1.1;
-}
-
-.close:before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  width: 16px;
-  height: 2px;
-  background-color: #fff;
-  transform: rotate(45deg);
-}
-
-.close:after {
-  content: "";
-  position: absolute;
-  top: 10px;
-  width: 16px;
-  height: 2px;
-  background-color: #fff;
-  transform: rotate(-45deg);
-}
-
 .for_image {
   margin-right: 83%;
   margin-top: -1%;
@@ -46008,8 +45975,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
     animation-timing-function: ease-out;
   }
   50% {
-    transform: perspective(400px) translateZ(150px) rotateY(190deg)
-      scale(1);
+    transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
     animation-timing-function: ease-in;
   }
   80% {
