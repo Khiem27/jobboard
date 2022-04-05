@@ -8,7 +8,6 @@ function BlogContent() {
     const getAllBlog = async () => {
       const getAll = await UserApi.getAllBlog();
       setBlogData(getAll.data);
-      console.log(getAll.data);
     };
 
     getAllBlog();

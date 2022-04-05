@@ -4,6 +4,7 @@ import { UserApi } from "../../../Api/UserApi/UserApi";
 import BlogDetail from "../../../Components/ Blog/PageTitle/BlogDetail";
 import Header from "../../../Components/Header/Header";
 import "../../../Css/bootstrap.min.css";
+
 BlogDetailsLayout.propTypes = {};
 
 function BlogDetailsLayout() {

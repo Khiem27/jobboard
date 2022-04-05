@@ -2608,7 +2608,6 @@ blockquote:before {
 /*without top bar*/
 .extra-nav {
   float: right;
-  padding: 26px 0;
   position: relative;
   z-index: 9;
 }

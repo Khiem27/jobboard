@@ -50001,20 +50001,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   footer .right_aligned {
     text-align: center;
   }
-  nav {
-    float: none !important;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100000;
-    background: #fff;
-    overflow-x: hidden;
-    width: 70%;
-    display: none;
-    padding: 10px 0 !important;
-    border-right: 1px solid #d3d7da;
-    height: 100%;
-  }
+
   nav span {
     font-family: "Open Sans", sans-serif;
     color: #555;

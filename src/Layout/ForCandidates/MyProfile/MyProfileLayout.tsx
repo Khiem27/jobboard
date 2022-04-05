@@ -1,7 +1,7 @@
 import React from "react";
-import Candidate from "../../../Components/Candidate/Candidate";
+import Candidate from "../../../Components/ForCandidate/Candidate/Candidate";
+import MyProfile from "../../../Components/ForCandidate/MyProfile/MyProfile";
 import Header from "../../../Components/Header/Header";
-import MyProfile from "../../../Components/MyProfile/MyProfile";
 
 MyProfileLayout.propTypes = {};
 

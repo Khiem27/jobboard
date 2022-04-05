@@ -1,12 +1,13 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { UserData } from "../../../Shared/types";
+import { LoginType, UserData } from "../../../Shared/types";
 import { UserApi } from "./../../../Api/UserApi/UserApi";
 const SLICE_REGISTER_NAME = "register";
 export const RegisterSliceAction = createAsyncThunk(
   "users/register",
   async (payload: UserData) => {
     const userData: UserData = payload;
-    const response = await UserApi.register(userData);
+    const type: LoginType = LoginType.CANDIDATE;
+    const response = await UserApi.register(userData, type);
     return response.data;
   }
 );

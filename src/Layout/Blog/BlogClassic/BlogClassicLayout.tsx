@@ -1,7 +1,7 @@
 import React from "react";
 import BlogContent from "../../../Components/ Blog/BlogContent/BlogContent";
+import BlogClassic from "../../../Components/ Blog/PageTitle/BlogClassic";
 import Header from "../../../Components/Header/Header";
-import BlogClassic from "../../../Components/PageTitle/Blog/BlogClassic";
 
 BlogClassicLayout.propTypes = {};
 

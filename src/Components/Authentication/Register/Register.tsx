@@ -84,6 +84,7 @@ function Register() {
           </div>
           <div className="clearfix"></div>
           <div className="tab-content nav p-b30 tab">
+            <h3>For Candidate</h3>
             <div id="login" className="tab-pane active ">
               <form
                 onSubmit={handleSubmit(onSubmit)}
@@ -161,9 +162,9 @@ function Register() {
                   <Link
                     data-toggle="tab"
                     className="forget-pass m-l5"
-                    to="/register-2#forgot-password"
+                    to="/register-company"
                   >
-                    <i className="fa fa-unlock-alt"></i> Forgot Password
+                    <i className="fa fa-unlock-alt"></i> You are a company?
                   </Link>
                 </div>
               </form>

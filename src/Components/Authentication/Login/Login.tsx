@@ -127,10 +127,13 @@ function Login() {
       <div className="col-lg-6 col-md-6">
         <div className="login-2 submit-resume p-a30 seth">
           <div className="nav">
+            <Link
+              className="site-button-link forget-pass m-t15 float-right"
+              to="/login-company"
+            >
+              Login For Company?
+            </Link>
             <form onSubmit={handleSubmit(onSubmit)} className="col-12 p-a0 ">
-              <p className="font-weight-600">
-                If you have an account with us, please log in.
-              </p>
               <div className="form-group ">
                 <label>E-Mail Address*</label>
                 <div className="input-group">
@@ -168,9 +171,10 @@ function Login() {
                 <button type="submit" className="site-button float-left">
                   Login
                 </button>
+
                 <Link
                   className="site-button-link forget-pass m-t15 float-right"
-                  to="/register"
+                  to="/register-candidate"
                 >
                   <i className="fa fa-unlock-alt"></i> Sign up
                 </Link>

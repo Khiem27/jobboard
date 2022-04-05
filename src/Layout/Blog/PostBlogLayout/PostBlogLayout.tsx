@@ -1,6 +1,6 @@
 import React from "react";
+import PostBlog from "../../../Components/ Blog/PostBlog/PostBlog";
 import Header from "../../../Components/Header/Header";
-import PostBlog from "../../../Components/PostBlog/PostBlog";
 
 PostBlogLayout.propTypes = {};
 

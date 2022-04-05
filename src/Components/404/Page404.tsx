@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Loading from "./Loading";
 import "./Page404.css";
 
 Page404.propTypes = {};
@@ -22,7 +21,6 @@ function Page404() {
   }, [counter]);
   return (
     <>
-      <Loading />
       <section className="error_404">
         <div className="tcvpb_section_content">
           <div className="tcvpb_container">
