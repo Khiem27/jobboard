@@ -4,22 +4,10 @@ import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { sendCompanyProfile } from "./CompanyProfileSlice";
 
-interface UserProfile {
-  company_name: string;
-  email: string;
-  founded_date: string;
-  description: string;
-  phone: number;
-  country: string;
-  post_code: number;
-  city: string;
-  full_address: string;
-}
-
 CompanyProfile.propTypes = {};
 
 function CompanyProfile() {
-  const [userProfile, setUserProfile] = useState<UserProfile>();
+  const [userProfile, setUserProfile] = useState<any>();
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -27,11 +15,10 @@ function CompanyProfile() {
     const userDataParse = JSON.parse(userData);
     setUserProfile(userDataParse);
   }, []);
-  const { register, handleSubmit } = useForm<UserProfile>();
-  const onSubmit: SubmitHandler<UserProfile> = (data) => {
+  const { register, handleSubmit } = useForm<any>();
+  const onSubmit: SubmitHandler<any> = (data) => {
     const newArr = {
       company_name: data.company_name,
-      email: data.email,
       founded_date: data.founded_date,
       country: data.country,
       description: data.description,
@@ -74,19 +61,7 @@ function CompanyProfile() {
                 />
               </div>
             </div>
-            <div className="col-lg-6 col-md-6">
-              <div className="form-group">
-                <label>Your Email</label>
-                <input
-                  {...register("email")}
-                  type="text"
-                  className="form-control"
-                  placeholder={
-                    userProfile?.email ? userProfile.email : "info@gmail.com"
-                  }
-                />
-              </div>
-            </div>
+
             <div className="col-lg-6 col-md-6">
               <div className="form-group">
                 <label>Founded Date</label>
@@ -95,11 +70,7 @@ function CompanyProfile() {
                   required
                   type="date"
                   className="form-control"
-                  placeholder={
-                    userProfile?.founded_date
-                      ? userProfile.founded_date
-                      : "xx/xx/xxxx"
-                  }
+                  value={userProfile && userProfile.founded_date}
                 />
               </div>
             </div>
@@ -167,8 +138,8 @@ function CompanyProfile() {
                   type="number"
                   className="form-control"
                   placeholder={
-                    userProfile?.post_code
-                      ? userProfile.post_code.toString()
+                    userProfile?.zip
+                      ? userProfile.zip.toString()
                       : "Please enter your postcode"
                   }
                 />
@@ -197,8 +168,8 @@ function CompanyProfile() {
                   type="text"
                   className="form-control"
                   placeholder={
-                    userProfile?.full_address
-                      ? userProfile.full_address
+                    userProfile?.address
+                      ? userProfile.address
                       : "Please enter your full address"
                   }
                 />

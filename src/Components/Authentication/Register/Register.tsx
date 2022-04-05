@@ -128,6 +128,7 @@ function Register() {
                     className="form-control"
                     placeholder="Password"
                     defaultValue=""
+                    type={"password"}
                   />
                   <div style={{ fontSize: "12px" }} className="text-danger">
                     {errors.registerPassword?.message}
@@ -139,6 +140,7 @@ function Register() {
                     className="form-control"
                     placeholder="Retype Password"
                     defaultValue=""
+                    type={"password"}
                   />
                   <div style={{ fontSize: "12px" }} className="text-danger">
                     {errors.registerRetypePassword?.message}

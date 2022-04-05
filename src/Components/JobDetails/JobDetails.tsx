@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { UserApi } from "../../Api/UserApi/UserApi";
 
 JobDetails.propTypes = {};
 
 function JobDetails() {
+  const history = useNavigate();
+
   let { id } = useParams();
   const [jobDetail, setJobDetail] = useState<any>({});
 
@@ -23,8 +25,8 @@ function JobDetails() {
 
   const handleApplyJob = async (id: any) => {
     try {
-      const res = await UserApi.applyJob(id);
-      console.log(res);
+      await UserApi.applyJob(id);
+      history("/jobs-applied-job");
     } catch (error: any) {
       alert(error.message);
     }
@@ -130,208 +132,7 @@ function JobDetails() {
               </div>
             </div>
           </div>
-          <div className="section-full content-inner">
-            <div className="container">
-              <div className="row">
-                <div className="col-xl-3 col-lg-6 col-md-6">
-                  <div className="m-b30 blog-grid">
-                    <div className="dez-post-media dez-img-effect ">
-                      <a href="/react/demo/blog-details">
-                        <img
-                          src="/react/demo/static/media/pic1.4da8584c.jpg"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div className="dez-info p-a20 border-1">
-                      <div className="dez-post-title ">
-                        <h5 className="post-title">
-                          <a href="/react/demo/blog-details">
-                            Title of blog post
-                          </a>
-                        </h5>
-                      </div>
-                      <div className="dez-post-meta ">
-                        <ul>
-                          <li className="post-date">
-                            {" "}
-                            <i className="ti-location-pin"></i> London{" "}
-                          </li>
-                          <li className="post-author">
-                            <i className="ti-user"></i>By{" "}
-                            <a href="/react/demo/job-detail">Jone</a>{" "}
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="dez-post-text">
-                        <p>
-                          All the Lorem Ipsum generators on the Internet tend to
-                          repeat predefined chunks.
-                        </p>
-                      </div>
-                      <div className="dez-post-readmore">
-                        <a
-                          title="READ MORE"
-                          rel="bookmark"
-                          className="site-button-link"
-                          href="/react/demo/blog-details"
-                        >
-                          <span className="fw6">READ MORE</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-xl-3 col-lg-6 col-md-6">
-                  <div className="m-b30 blog-grid">
-                    <div className="dez-post-media dez-img-effect ">
-                      <a href="/react/demo/blog-details">
-                        <img
-                          src="/react/demo/static/media/pic2.32b62dc5.jpg"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div className="dez-info p-a20 border-1">
-                      <div className="dez-post-title ">
-                        <h5 className="post-title">
-                          <a href="/react/demo/blog-details">
-                            Title of blog post
-                          </a>
-                        </h5>
-                      </div>
-                      <div className="dez-post-meta ">
-                        <ul>
-                          <li className="post-date">
-                            {" "}
-                            <i className="ti-location-pin"></i> London{" "}
-                          </li>
-                          <li className="post-author">
-                            <i className="ti-user"></i>By{" "}
-                            <a href="/react/demo/job-detail">Jone</a>{" "}
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="dez-post-text">
-                        <p>
-                          All the Lorem Ipsum generators on the Internet tend to
-                          repeat predefined chunks.
-                        </p>
-                      </div>
-                      <div className="dez-post-readmore">
-                        <a
-                          title="READ MORE"
-                          rel="bookmark"
-                          className="site-button-link"
-                          href="/react/demo/blog-details"
-                        >
-                          <span className="fw6">READ MORE</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-xl-3 col-lg-6 col-md-6">
-                  <div className="m-b30 blog-grid">
-                    <div className="dez-post-media dez-img-effect ">
-                      <a href="/react/demo/blog-details">
-                        <img
-                          src="/react/demo/static/media/pic3.a60300d4.jpg"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div className="dez-info p-a20 border-1">
-                      <div className="dez-post-title ">
-                        <h5 className="post-title">
-                          <a href="/react/demo/blog-details">
-                            Title of blog post
-                          </a>
-                        </h5>
-                      </div>
-                      <div className="dez-post-meta ">
-                        <ul>
-                          <li className="post-date">
-                            {" "}
-                            <i className="ti-location-pin"></i> London{" "}
-                          </li>
-                          <li className="post-author">
-                            <i className="ti-user"></i>By{" "}
-                            <a href="/react/demo/job-detail">Jone</a>{" "}
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="dez-post-text">
-                        <p>
-                          All the Lorem Ipsum generators on the Internet tend to
-                          repeat predefined chunks.
-                        </p>
-                      </div>
-                      <div className="dez-post-readmore">
-                        <a
-                          title="READ MORE"
-                          rel="bookmark"
-                          className="site-button-link"
-                          href="/react/demo/blog-details"
-                        >
-                          <span className="fw6">READ MORE</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-xl-3 col-lg-6 col-md-6">
-                  <div className="m-b30 blog-grid">
-                    <div className="dez-post-media dez-img-effect ">
-                      <a href="/react/demo/blog-details">
-                        <img
-                          src="/react/demo/static/media/pic4.b5347aaf.jpg"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div className="dez-info p-a20 border-1">
-                      <div className="dez-post-title ">
-                        <h5 className="post-title">
-                          <a href="/react/demo/blog-details">
-                            Title of blog post
-                          </a>
-                        </h5>
-                      </div>
-                      <div className="dez-post-meta ">
-                        <ul>
-                          <li className="post-date">
-                            {" "}
-                            <i className="ti-location-pin"></i> London{" "}
-                          </li>
-                          <li className="post-author">
-                            <i className="ti-user"></i>By{" "}
-                            <a href="/react/demo/job-detail">Jone</a>{" "}
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="dez-post-text">
-                        <p>
-                          All the Lorem Ipsum generators on the Internet tend to
-                          repeat predefined chunks.
-                        </p>
-                      </div>
-                      <div className="dez-post-readmore">
-                        <a
-                          title="READ MORE"
-                          rel="bookmark"
-                          className="site-button-link"
-                          href="/react/demo/blog-details"
-                        >
-                          <span className="fw6">READ MORE</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div className="section-full content-inner"></div>
         </div>
       )}
     </>

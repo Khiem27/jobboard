@@ -1,23 +1,20 @@
-import Pagination from "@mui/material/Pagination";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { UserApi } from "../../../Api/UserApi/UserApi";
 
 AppliedJobContent.propTypes = {};
 
 function AppliedJobContent() {
   const [applyData, setApplyData] = useState<any>();
-  const [page, setPage] = React.useState(1);
-  const handleChange = (event: any, value: any) => {
-    setPage(value);
-  };
+
   useEffect(() => {
     const getAppliedJobs = async () => {
-      const getApply = await UserApi.getApplyJobCandidate(page, 1);
+      const getApply = await UserApi.getApplyJobCandidate(1, 1000);
       const getApplyData = getApply.data;
       setApplyData(getApplyData);
     };
     getAppliedJobs();
-  }, [page]);
+  }, []);
   return (
     <div className="col-xl-9 col-lg-8 m-b30 browse-job">
       <div className="job-bx-title  clearfix">
@@ -39,7 +36,7 @@ function AppliedJobContent() {
                 <div className="post-bx">
                   <div className="job-post-info m-a0">
                     <h4>
-                      <a href="/react/demo/job-detail">{item.title}</a>
+                      <Link to={`/job-detail/${item.id}`}>{item.title}</Link>
                     </h4>
                     <ul>
                       <li>
@@ -50,12 +47,12 @@ function AppliedJobContent() {
                       </li>
                     </ul>
                     <div className="job-time m-t15 m-b10">
-                      <a className="mr-1" href="/react/demo/">
+                      <Link className="mr-1" to="#">
                         <span>{item.tags}</span>
-                      </a>
-                      <a className="mr-1" href="/react/demo/">
+                      </Link>
+                      <Link className="mr-1" to="#">
                         <span>{item.type}</span>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -63,11 +60,6 @@ function AppliedJobContent() {
             );
           })}
       </ul>
-      <div className="pagination-bx m-t30">
-        <ul className="pagination">
-          <Pagination count={10} page={page} onChange={handleChange} />
-        </ul>
-      </div>
     </div>
   );
 }

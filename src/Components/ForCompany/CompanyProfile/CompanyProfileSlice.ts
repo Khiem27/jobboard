@@ -8,8 +8,12 @@ export const CompanyProfileSlice = createSlice({
   reducers: {
     sendCompanyProfile: (state, action) => {
       const putProfileCompany = async () => {
-        const res = await UserApi.putCompany(action.payload);
-        console.log(res);
+        const response = await UserApi.putCompany(action.payload);
+        if (response) {
+          localStorage.setItem("user", JSON.stringify(response.data));
+          window.location.reload();
+          window.scrollTo(0, 0);
+        }
       };
 
       putProfileCompany();

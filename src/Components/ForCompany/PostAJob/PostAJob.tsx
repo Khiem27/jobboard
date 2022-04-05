@@ -6,7 +6,6 @@ import { SubmitHandler, useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import { UserApi } from "../../../Api/UserApi/UserApi";
 
-const optionsExp = ["1", "2", "3", "4", "5", "6"];
 const optionsType = ["Internship", "Freelance", "Part Time", "Full Time"];
 const optionsTags = [
   "Web Developer",
@@ -42,9 +41,6 @@ PostAJob.propTypes = {};
 function PostAJob() {
   const { enqueueSnackbar } = useSnackbar();
 
-  const [valueExp, setValueExp] = React.useState(optionsExp[0]);
-  const [inputValueExp, setInputValueExp] = React.useState("");
-
   const [valueType, setValueType] = React.useState(optionsType[0]);
   const [inputValueType, setInputValueType] = React.useState("");
 
@@ -58,7 +54,7 @@ function PostAJob() {
         title: data.title,
         tags: valueTags,
         type: valueType,
-        exp: valueExp,
+        exp: data.exp,
         min_salary: data.min_salary,
         max_salary: data.max_salary,
         deadline: data.deadline,
@@ -155,19 +151,10 @@ function PostAJob() {
             <div className="col-lg-6 col-md-6">
               <div className="form-group">
                 <label>Experience (Years)</label>
-                <Autocomplete
-                  value={valueExp}
-                  onChange={(event, newValue: any) => {
-                    setValueExp(newValue);
-                  }}
-                  inputValue={inputValueExp}
-                  onInputChange={(event, newInputValue) => {
-                    setInputValueExp(newInputValue);
-                  }}
-                  id="controllable-states-demo"
-                  options={optionsExp}
-                  sx={{ width: "100%" }}
-                  renderInput={(params) => <TextField {...params} />}
+                <input
+                  {...register("exp", { required: true })}
+                  type="number"
+                  className="form-control"
                 />
               </div>
             </div>
