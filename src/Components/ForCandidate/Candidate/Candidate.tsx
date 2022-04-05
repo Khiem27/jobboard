@@ -91,12 +91,6 @@ function Candidate() {
                 <span>Applied Jobs</span>
               </Link>
             </li>
-            <li>
-              <Link to="/jobs-alerts">
-                <i className="fa-solid fa-bell"></i>
-                <span>Job Alerts</span>
-              </Link>
-            </li>
           </ul>
         </div>
       </div>

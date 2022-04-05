@@ -5,6 +5,7 @@ import RegisterCompanySlice from "./Components/Authentication/Register/RegisterC
 import RegisterSlice from "./Components/Authentication/Register/RegisterSlice";
 import MyProfileSlice from "./Components/ForCandidate/MyProfile/MyProfileSlice";
 import CompanyProfileSlice from "./Components/ForCompany/CompanyProfile/CompanyProfileSlice";
+import SliderHomeSlice from "./Components/Slider/SliderHomeSlice";
 const rootReducers = {
   register: RegisterSlice,
   registerCompany: RegisterCompanySlice,
@@ -12,8 +13,11 @@ const rootReducers = {
   loginCompany: LoginCompanySlice,
   myProfile: MyProfileSlice,
   companyProfile: CompanyProfileSlice,
+  sliderHomeSlice: SliderHomeSlice,
 };
 
 export const store = configureStore({
   reducer: rootReducers,
 });
+
+export type RootState = ReturnType<typeof store.getState>;

@@ -1,15 +1,35 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { ChangeSearchTitle } from "../Slider/SliderHomeSlice";
 
 FilterCategories.propTypes = {};
 
 function FilterCategories() {
+  const dispatch = useDispatch();
+  const history = useNavigate();
+
+  const handleClick = (
+    tag: any,
+    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+  ) => {
+    history("/browse-job-list");
+
+    e.preventDefault();
+    const data = {
+      tag,
+      // title: titleRef.current.value,
+      // address: addressRef.current.value,
+    };
+    dispatch(ChangeSearchTitle(data));
+  };
   return (
     <div className="section-full job-categories content-inner-2 bg-white">
       <div className="container">
         <div className="section-head d-flex head-counter clearfix">
           <div className="mr-auto">
             <h2 className="m-b5">Popular Categories</h2>
-            <h6 className="fw3">n+ Catetories work wating for you</h6>
+            <h6 className="fw3">8 Catetories work wating for you</h6>
           </div>
         </div>
         <div className="row sp20">
@@ -19,10 +39,13 @@ function FilterCategories() {
                 <div className="icon-md text-primary m-b20">
                   <i className="ti-location-pin"></i>
                 </div>
-                <a className="dez-tilte" href="/react/demo/company-manage-job">
-                  Design, Art &amp; Multimedia
+                <a
+                  onClick={(e) => handleClick("Internship", e)}
+                  className="dez-tilte"
+                  href="/react/demo/company-manage-job"
+                >
+                  Internship
                 </a>
-                <p className="m-a0">198 Open Positions</p>
                 <div className="rotate-icon">
                   <i className="ti-location-pin"></i>
                 </div>
@@ -35,10 +58,13 @@ function FilterCategories() {
                 <div className="icon-md text-primary m-b20">
                   <i className="ti-wand"></i>
                 </div>
-                <a className="dez-tilte" href="/react/demo/company-manage-job">
-                  Education Training
+                <a
+                  onClick={(e) => handleClick("Freelance", e)}
+                  className="dez-tilte"
+                  href="/react/demo/company-manage-job"
+                >
+                  Freelance
                 </a>
-                <p className="m-a0">198 Open Positions</p>
                 <div className="rotate-icon">
                   <i className="ti-wand"></i>
                 </div>
@@ -51,10 +77,13 @@ function FilterCategories() {
                 <div className="icon-md text-primary m-b20">
                   <i className="ti-wallet"></i>
                 </div>
-                <a className="dez-tilte" href="/react/demo/company-manage-job">
-                  Accounting / Finance
+                <a
+                  onClick={(e) => handleClick("Part Time", e)}
+                  className="dez-tilte"
+                  href="/react/demo/company-manage-job"
+                >
+                  Part Time
                 </a>
-                <p className="m-a0">198 Open Positions</p>
                 <div className="rotate-icon">
                   <i className="ti-wallet"></i>
                 </div>
@@ -67,10 +96,13 @@ function FilterCategories() {
                 <div className="icon-md text-primary m-b20">
                   <i className="ti-cloud-up"></i>
                 </div>
-                <a className="dez-tilte" href="/react/demo/company-manage-job">
-                  Human Resource
+                <a
+                  onClick={(e) => handleClick("Full Time", e)}
+                  className="dez-tilte"
+                  href="/react/demo/company-manage-job"
+                >
+                  Full Time
                 </a>
-                <p className="m-a0">198 Open Positions</p>
                 <div className="rotate-icon">
                   <i className="ti-cloud-up"></i>
                 </div>
@@ -83,10 +115,13 @@ function FilterCategories() {
                 <div className="icon-md text-primary m-b20">
                   <i className="ti-bar-chart"></i>
                 </div>
-                <a className="dez-tilte" href="/react/demo/company-manage-job">
-                  Telecommunications
+                <a
+                  onClick={(e) => handleClick("Web Developer", e)}
+                  className="dez-tilte"
+                  href="/react/demo/company-manage-job"
+                >
+                  Web Developer
                 </a>
-                <p className="m-a0">198 Open Positions</p>
                 <div className="rotate-icon">
                   <i className="ti-bar-chart"></i>
                 </div>
@@ -99,10 +134,13 @@ function FilterCategories() {
                 <div className="icon-md text-primary m-b20">
                   <i className="ti-tablet"></i>
                 </div>
-                <a className="dez-tilte" href="/react/demo/company-manage-job">
-                  Restaurant / Food Service
+                <a
+                  onClick={(e) => handleClick("Backend", e)}
+                  className="dez-tilte"
+                  href="/react/demo/company-manage-job"
+                >
+                  Backend
                 </a>
-                <p className="m-a0">198 Open Positions</p>
                 <div className="rotate-icon">
                   <i className="ti-tablet"></i>
                 </div>
@@ -115,10 +153,13 @@ function FilterCategories() {
                 <div className="icon-md text-primary m-b20">
                   <i className="ti-camera"></i>
                 </div>
-                <a className="dez-tilte" href="/react/demo/company-manage-job">
-                  Construction / Facilities
+                <a
+                  onClick={(e) => handleClick("Frontend", e)}
+                  className="dez-tilte"
+                  href="/react/demo/company-manage-job"
+                >
+                  Frontend
                 </a>
-                <p className="m-a0">198 Open Positions</p>
                 <div className="rotate-icon">
                   <i className="ti-camera"></i>
                 </div>
@@ -131,18 +172,18 @@ function FilterCategories() {
                 <div className="icon-md text-primary m-b20">
                   <i className="ti-panel"></i>
                 </div>
-                <a className="dez-tilte" href="/react/demo/company-manage-job">
-                  Health
+                <a
+                  onClick={(e) => handleClick("Fullstack", e)}
+                  className="dez-tilte"
+                  href="/react/demo/company-manage-job"
+                >
+                  Fullstack
                 </a>
-                <p className="m-a0">198 Open Positions</p>
                 <div className="rotate-icon">
                   <i className="ti-panel"></i>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="col-lg-12 text-center m-t30">
-            <button className="site-button radius-xl">All Categories</button>
           </div>
         </div>
       </div>

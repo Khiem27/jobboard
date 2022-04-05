@@ -1,9 +1,10 @@
 import Avatar from "@mui/material/Avatar";
 import Pagination from "@mui/material/Pagination";
 import React, { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { UserApi } from "../../Api/UserApi/UserApi";
-
+import { RootState } from "../../store";
 JobListContent.propTypes = {};
 
 function JobListContent() {
@@ -12,14 +13,28 @@ function JobListContent() {
     setPage(value);
   };
   const [allJobs, setAllJobs] = useState<any>([]);
+  const [total, setTotal] = useState<any>();
+  const searchJobs = useSelector(
+    (state: RootState) => state.sliderHomeSlice.search
+  );
   useEffect(() => {
     const getAllJob = async () => {
-      const getJOBS = await UserApi.getJob(page, 5);
-      const allJob = getJOBS.data;
+      const getJOBS = await UserApi.getJob({ page, limit: 5, ...searchJobs });
+      const allJob = getJOBS.data.jobs;
+      const totalJob = getJOBS.data.total / 5;
+      setTotal(Math.ceil(totalJob));
       setAllJobs(allJob);
     };
     getAllJob();
-  }, [page]);
+  }, [page, searchJobs]);
+
+  const listJobs = useSelector(
+    (state: RootState) => state.sliderHomeSlice.jobs
+  );
+
+  useEffect(() => {
+    setAllJobs(listJobs);
+  }, [listJobs]);
 
   const time = (dateInput: any) => {
     const date: any = new Date(dateInput);
@@ -29,69 +44,7 @@ function JobListContent() {
     <>
       <div className="section-full browse-job-find">
         <div className="container">
-          <div className="find-job-bx">
-            <form className="dezPlaceAni">
-              <div className="row">
-                <div className="col-lg-4 col-md-6">
-                  <div className="form-group">
-                    <label>Job Title, Keywords, or Phrase</label>
-                    <div className="input-group">
-                      <input
-                        type="text"
-                        className="form-control"
-                        placeholder=""
-                      />
-                      <div className="input-group-append">
-                        <span className="input-group-text">
-                          <i className="fa fa-search"></i>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-3 col-md-6">
-                  <div className="form-group">
-                    <label>City, State or ZIP</label>
-                    <div className="input-group">
-                      <input
-                        type="text"
-                        className="form-control"
-                        placeholder=""
-                      />
-                      <div className="input-group-append">
-                        <span className="input-group-text">
-                          <i className="fa fa-map-marker"></i>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-3 col-md-6">
-                  <div className="form-group">
-                    <select className="select-btn custom-select">
-                      <option>Select Sector</option>
-                      <option>Construction</option>
-                      <option>Corodinator</option>
-                      <option>Employer</option>
-                      <option>Financial Career</option>
-                      <option>Information Technology</option>
-                      <option>Marketing</option>
-                      <option>Quality check</option>
-                      <option>Real Estate</option>
-                      <option>Sales</option>
-                      <option>Supporting</option>
-                      <option>Teaching</option>
-                    </select>
-                  </div>
-                </div>
-                <div className="col-lg-2 col-md-6">
-                  <button type="submit" className="site-button btn-block">
-                    Find Job
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
+          <div className="find-job-bx"></div>
         </div>
       </div>
       <div className="content-block">
@@ -106,13 +59,16 @@ function JobListContent() {
                     </h5>
                   )}
                   <div className="float-right">
-                    <span className="select-title">Sort by freshness</span>
-                    <select className="custom-btn">
-                      <option>Last 2 Months</option>
-                      <option>Last Months</option>
-                      <option>Last Weeks</option>
-                      <option>Last 3 Days</option>
-                    </select>
+                    {" "}
+                    <button
+                      onClick={() => {
+                        window.location.reload();
+                      }}
+                      type="submit"
+                      className="site-button btn-block"
+                    >
+                      Clear
+                    </button>
                   </div>
                 </div>
                 <ul className="post-job-bx">
@@ -183,13 +139,86 @@ function JobListContent() {
                       );
                     })}
                 </ul>
-                <div className="m-t30">
-                  <div className="d-flex">
-                    <Pagination
-                      count={10}
-                      page={page}
-                      onChange={handleChange}
-                    />
+                {allJobs.length && (
+                  <div
+                    className="m-t30"
+                    style={{ display: "flex", justifyContent: "center" }}
+                  >
+                    <div className="d-flex">
+                      <Pagination
+                        count={total}
+                        page={page}
+                        onChange={handleChange}
+                      />
+                    </div>
+                  </div>
+                )}
+              </div>
+              <div className="col-xl-3 col-lg-4 col-md-5">
+                <div className="sticky-top">
+                  <div className="candidates-are-sys m-b30">
+                    <div className="candidates-bx">
+                      <div className="testimonial-pic radius">
+                        <img
+                          src="../img/aiu.jpg"
+                          alt=""
+                          width="100"
+                          height="100"
+                        />
+                      </div>
+                      <div className="testimonial-text">
+                        <p>
+                          <b>Tech:</b> Golang, NestJs, SpringBoot, React,
+                          Docker, K8S, Redis, ElasticSearch, CI/CD ...
+                        </p>
+                      </div>
+
+                      <div className="testimonial-detail">
+                        {" "}
+                        <strong className="testimonial-name">
+                          Lang Minh Nguyên
+                        </strong>{" "}
+                        <span className="testimonial-position">
+                          CN20E <i>Senior Backend</i>
+                        </span>{" "}
+                        <a href="https://github.com/3langn">
+                          https://github.com/3langn
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="candidates-are-sys m-b30">
+                    <div className="candidates-bx">
+                      <div className="testimonial-pic radius">
+                        <img
+                          src="../img/eiu.jpg"
+                          alt=""
+                          width="100"
+                          height="100"
+                        />
+                      </div>
+                      <div className="testimonial-text">
+                        <p>
+                          <b>Tech:</b> HTML, CSS, JavaScript, ReactJS,
+                          TypeScript, SASS, Firebase, Redux Toolkit, Axios Api
+                          ...
+                        </p>
+                      </div>
+
+                      <div className="testimonial-detail">
+                        {" "}
+                        <strong className="testimonial-name">
+                          Lê Thế Khiêm
+                        </strong>{" "}
+                        <span className="testimonial-position">
+                          CN20D <i>Junior Frontend</i>
+                        </span>{" "}
+                        <a href="https://github.com/Khiem27">
+                          https://github.com/Khiem27
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

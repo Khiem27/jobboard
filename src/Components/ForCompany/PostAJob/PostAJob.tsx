@@ -8,6 +8,20 @@ import { UserApi } from "../../../Api/UserApi/UserApi";
 
 const optionsExp = ["1", "2", "3", "4", "5", "6"];
 const optionsType = ["Internship", "Freelance", "Part Time", "Full Time"];
+const optionsTags = [
+  "Web Developer",
+  "DevOps",
+  "Backend",
+  "Frontend",
+  "Fullstack",
+  "MERN",
+  "Designer",
+  "Tester",
+  "Leader",
+  "Fuho",
+  "Graphics",
+  "Other",
+];
 
 interface UserProfile {
   title: string;
@@ -34,12 +48,15 @@ function PostAJob() {
   const [valueType, setValueType] = React.useState(optionsType[0]);
   const [inputValueType, setInputValueType] = React.useState("");
 
+  const [valueTags, setValueTags] = React.useState(optionsTags[0]);
+  const [inputValueTags, setInputValueTags] = React.useState("");
+
   const { register, handleSubmit } = useForm<UserProfile>();
   const onSubmit: SubmitHandler<UserProfile> = async (data) => {
     try {
       const newArr = {
         title: data.title,
-        tags: data.tags,
+        tags: valueTags,
         type: valueType,
         exp: valueExp,
         min_salary: data.min_salary,
@@ -99,10 +116,19 @@ function PostAJob() {
             <div className="col-lg-6 col-md-6">
               <div className="form-group">
                 <label>Job Tags</label>
-                <input
-                  {...register("tags", { required: true })}
-                  type="text"
-                  className="form-control"
+                <Autocomplete
+                  value={valueTags}
+                  onChange={(event, newValue: any) => {
+                    setValueTags(newValue);
+                  }}
+                  inputValue={inputValueTags}
+                  onInputChange={(event, newInputValue) => {
+                    setInputValueTags(newInputValue);
+                  }}
+                  id="controllable-states-demo"
+                  options={optionsTags}
+                  sx={{ width: "100%" }}
+                  renderInput={(params) => <TextField {...params} />}
                 />
               </div>
             </div>

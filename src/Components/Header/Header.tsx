@@ -119,11 +119,6 @@ function Header() {
                         Applied Job <span className="new-page">New</span>
                       </Link>
                     </li>
-                    <li>
-                      <Link className="dez-page" to="/jobs-alerts">
-                        Jobs Alerts <span className="new-page">New</span>
-                      </Link>
-                    </li>
                   </ul>
                 </li>
                 <li

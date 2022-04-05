@@ -86,11 +86,16 @@ export const UserApi = {
     return RequestClient.put("company", data);
   },
 
-  getJob: (page: number, limit: number) => {
+  getJob: (data: {
+    page: number;
+    limit: number;
+    title?: string;
+    address?: string;
+    tag?: string;
+  }) => {
     return RequestClient.get("job", {
       params: {
-        page,
-        limit,
+        ...data,
       },
     });
   },

@@ -1,8 +1,38 @@
-import React from "react";
+import Autocomplete from "@mui/material/Autocomplete";
+import TextField from "@mui/material/TextField";
+import React, { useRef } from "react";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { ChangeSearchTitle } from "./SliderHomeSlice";
 
 SliderHome.propTypes = {};
 
+const optionsTags = [
+  "Internship",
+  "Freelance",
+  "Part Time",
+  "Full Time",
+  "Web Developer",
+  "DevOps",
+  "Backend",
+  "Frontend",
+  "Fullstack",
+  "MERN",
+  "Designer",
+  "Tester",
+  "Leader",
+  "Fuho",
+  "Graphics",
+  "Other",
+];
 function SliderHome() {
+  const history = useNavigate();
+  const [valueTags, setValueTags] = React.useState(optionsTags[0]);
+  const [inputValueTags, setInputValueTags] = React.useState("");
+  const titleRef = useRef<any>(undefined);
+  const addressRef = useRef<any>(undefined);
+  const dispatch = useDispatch();
+
   return (
     <div
       className="dez-bnr-inr dez-bnr-inr-md"
@@ -20,14 +50,14 @@ function SliderHome() {
             </h2>
             <form className="dezPlaceAni">
               <div className="row">
-                <div className="col-lg-4 col-md-6">
+                <div className="col-lg-4-fix col-md-6">
                   <div className="form-group">
-                    <label>Job Title, Keywords, or Phrase</label>
                     <div className="input-group">
                       <input
+                        ref={titleRef}
                         type="text"
                         className="form-control"
-                        placeholder=""
+                        placeholder="Job Title, Keywords, or Phrase"
                       />
                       <div className="input-group-append">
                         <span className="input-group-text">
@@ -39,12 +69,12 @@ function SliderHome() {
                 </div>
                 <div className="col-lg-3 col-md-6">
                   <div className="form-group">
-                    <label>Email address</label>
                     <div className="input-group">
                       <input
+                        ref={addressRef}
                         type="text"
                         className="form-control"
-                        placeholder=""
+                        placeholder="Address"
                       />
                       <div className="input-group-append">
                         <span className="input-group-text">
@@ -56,24 +86,38 @@ function SliderHome() {
                 </div>
                 <div className="col-lg-3 col-md-6">
                   <div className="form-group">
-                    <select className="select-btn custom-select">
-                      <option>Select Sector</option>
-                      <option>Construction</option>
-                      <option>Corodinator</option>
-                      <option>Employer</option>
-                      <option>Financial Career</option>
-                      <option>Information Technology</option>
-                      <option>Marketing</option>
-                      <option>Quality check</option>
-                      <option>Real Estate</option>
-                      <option>Sales</option>
-                      <option>Supporting</option>
-                      <option>Teaching</option>
-                    </select>
+                    <Autocomplete
+                      value={valueTags}
+                      onChange={(event, newValue: any) => {
+                        setValueTags(newValue);
+                      }}
+                      inputValue={inputValueTags}
+                      onInputChange={(event, newInputValue) => {
+                        setInputValueTags(newInputValue);
+                      }}
+                      id="controllable-states-demo"
+                      options={optionsTags}
+                      sx={{ width: "100%" }}
+                      renderInput={(params) => <TextField {...params} />}
+                    />
                   </div>
                 </div>
+
                 <div className="col-lg-2 col-md-6">
-                  <button type="submit" className="site-button btn-block">
+                  <button
+                    onClick={(e) => {
+                      history("/browse-job-list");
+                      e.preventDefault();
+                      const data = {
+                        tag: valueTags,
+                        title: titleRef.current.value,
+                        address: addressRef.current.value,
+                      };
+                      dispatch(ChangeSearchTitle(data));
+                    }}
+                    type="submit"
+                    className="site-button btn-block"
+                  >
                     Find Job
                   </button>
                 </div>
