@@ -10,7 +10,6 @@ function CompanyResume() {
     const getAppliedJobs = async () => {
       const getApplied = await UserApi.getApplyJobCompany(1, 10000);
       seyApplyJobData(getApplied.data);
-      console.log(getApplied.data);
     };
     getAppliedJobs();
   }, []);
@@ -89,7 +88,10 @@ function CompanyResume() {
                                   <Link
                                     target="blank"
                                     className="job-links"
-                                    to={item.employments[0].curriculum_vitae}
+                                    to={
+                                      item.employments &&
+                                      `${item.employments[0].curriculum_vitae}`
+                                    }
                                   >
                                     {console.log(item.employments[0])}
                                     <i className="fa fa-download"></i>
