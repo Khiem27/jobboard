@@ -11,13 +11,17 @@ function JobDetails() {
   const [jobDetail, setJobDetail] = useState<any>({});
 
   const [jobId, setJobId] = useState<any>();
+  const [jobType, setJobType] = useState<any>();
+
   useEffect(() => {
+    const userData: any = localStorage.getItem("user");
+    const userDataParse = JSON.parse(userData).type;
     const getOneApi = async () => {
       const getOne = await UserApi.getOneJob(id);
       const jobData = getOne.data;
-      setJobDetail(jobData);
       console.log(jobData);
-
+      setJobType(userDataParse);
+      setJobDetail(jobData);
       setJobId(jobData.id);
     };
     getOneApi();
@@ -96,7 +100,7 @@ function JobDetails() {
                         <strong>Job Tags: </strong> {jobDetail.tags}
                       </li>
                       <li>
-                        <strong>Deadline:</strong> 25th January 2018
+                        <strong>Deadline:</strong> 25th January 2022
                       </li>
                       <li>
                         <i className="ti-location-pin text-black m-r5"></i>{" "}
@@ -116,7 +120,7 @@ function JobDetails() {
                     </ul>
                     {jobId && (
                       <>
-                        {jobId !== "Company" && (
+                        {jobType !== "Company" && (
                           <Link
                             onClick={() => handleApplyJob(jobId)}
                             className="site-button"

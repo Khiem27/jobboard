@@ -51,7 +51,7 @@ function Search() {
                     <input
                       ref={titleRef}
                       type="text"
-                      value={searchJobs.title}
+                      value={searchJobs.title && `${searchJobs.title}`}
                       className="form-control"
                       placeholder="Job Title, Keywords, or Phrase"
                     />
@@ -69,7 +69,7 @@ function Search() {
                     <input
                       ref={addressRef}
                       type="text"
-                      value={searchJobs.address}
+                      value={searchJobs.address && `${searchJobs.address}`}
                       className="form-control"
                       placeholder="Address"
                     />
@@ -84,7 +84,7 @@ function Search() {
               <div className="col-lg-3 col-md-6">
                 <div className="form-group">
                   <Autocomplete
-                    value={valueTags}
+                    value={valueTags ? `${valueTags}` : undefined}
                     onChange={(event, newValue: any) => {
                       setValueTags(newValue);
                     }}

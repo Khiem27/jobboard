@@ -18,7 +18,6 @@ interface UserProfile {
   post_code: number;
   city: string;
   full_address: string;
-  email: string;
 }
 
 MyProfile.propTypes = {};
@@ -51,7 +50,6 @@ function MyProfile() {
       post_code: data.post_code,
       city: data.city,
       full_address: data.full_address,
-      email: data.email,
     };
 
     const action = sendUserProfile(newArr);
@@ -199,19 +197,7 @@ function MyProfile() {
                 />
               </div>
             </div>
-            <div className="col-lg-6 col-md-6">
-              <div className="form-group">
-                <label>Email Address:*</label>
-                <input
-                  {...register("email")}
-                  type="text"
-                  className="form-control"
-                  placeholder={
-                    userProfile?.email ? userProfile.email : "info@example.com"
-                  }
-                />
-              </div>
-            </div>
+
             <div className="col-lg-6 col-md-6">
               <div className="form-group">
                 <label>Country:</label>

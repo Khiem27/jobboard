@@ -50026,12 +50026,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   nav > ul a:hover span {
     color: #ff503f !important;
   }
-  nav > ul > li {
-    display: block;
-    width: 100%;
-    margin: 0 !important;
-    min-width: 230px;
-  }
+
   nav > ul > .current-menu-item,
   nav > ul > .current-menu-parent,
   nav > ul > .current-menu-ancestor,
@@ -50761,20 +50756,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   footer .right_aligned {
     text-align: center;
   }
-  nav {
-    float: none !important;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100000;
-    background: #fff;
-    overflow-x: hidden;
-    width: 70%;
-    display: none;
-    padding: 10px 0 !important;
-    border-right: 1px solid #d3d7da;
-    height: 100%;
-  }
+
   nav span {
     font-family: "Open Sans", sans-serif;
     color: #555;
@@ -50799,12 +50781,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   nav > ul a:hover span {
     color: #ff503f !important;
   }
-  nav > ul > li {
-    display: block;
-    width: 100%;
-    margin: 0 !important;
-    min-width: 230px;
-  }
+
   nav > ul > .current-menu-item,
   nav > ul > .current-menu-parent,
   nav > ul > .current-menu-ancestor,
@@ -51594,20 +51571,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   footer .right_aligned {
     text-align: center;
   }
-  nav {
-    float: none !important;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100000;
-    background: #fff;
-    overflow-x: hidden;
-    width: 70%;
-    display: none;
-    padding: 10px 0 !important;
-    border-right: 1px solid #d3d7da;
-    height: 100%;
-  }
+
   nav span {
     font-family: "Open Sans", sans-serif;
     color: #555;
@@ -51632,12 +51596,7 @@ footer .widget.woocommerce.widget_layered_nav li a:hover {
   nav > ul a:hover span {
     color: #ff503f !important;
   }
-  nav > ul > li {
-    display: block;
-    width: 100%;
-    margin: 0 !important;
-    min-width: 230px;
-  }
+ 
   nav > ul > .current-menu-item,
   nav > ul > .current-menu-parent,
   nav > ul > .current-menu-ancestor,

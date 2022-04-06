@@ -32,10 +32,6 @@ function BlogContent() {
                             <i className="fa fa-calendar"></i>
                             {item.created_at}
                           </li>
-                          {/* <li className="post-author">
-                            <i className="fa fa-user"></i>By{" "}
-                            <Link to="/blog-classic">demongo</Link>{" "}
-                          </li> */}
                         </ul>
                       </div>
                       <div className="dez-post-title">

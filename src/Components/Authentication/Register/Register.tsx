@@ -184,10 +184,11 @@ function Register() {
             <div className="col-lg-12 text-center">
               <span>
                 {" "}
-                © Design by <i className="fa fa-heart m-lr5 text-red heart"></i>
+                © Design by
                 <a href="https://www.topcv.vn/xem-cv/B1VYBQAEBgRRUQZTUAJUBQZbVgYDUAsBUwFTWg7914">
-                  The Khiem{" "}
-                </a>{" "}
+                  {" "}
+                  xxxxxxxx{" "}
+                </a>
                 All rights reserved.
               </span>
             </div>

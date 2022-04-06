@@ -169,14 +169,16 @@ function Header() {
                   <ul className="sub-menu">
                     <li>
                       <Link className="dez-page" to="/blog-classic">
-                        Classic
+                        View All Blog
                       </Link>
                     </li>
-                    <li>
-                      <Link className="dez-page" to="/post-blog">
-                        Post Blog
-                      </Link>
-                    </li>
+                    {userType === "Company" && (
+                      <li>
+                        <Link className="dez-page" to="/post-blog">
+                          Post Blog
+                        </Link>
+                      </li>
+                    )}
                   </ul>
                 </li>
               </ul>

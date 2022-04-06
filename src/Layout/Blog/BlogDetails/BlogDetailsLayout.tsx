@@ -24,7 +24,7 @@ function BlogDetailsLayout() {
       {blogData && (
         <div className="content-area">
           <div className="container">
-            <div className="row">
+            <div style={{ justifyContent: "center" }} className="row">
               <div className="col-lg-8 col-md-7 m-b10">
                 <div className="blog-post blog-single blog-style-1">
                   <div className="dez-post-meta">
@@ -42,7 +42,6 @@ function BlogDetailsLayout() {
                 </div>
                 <div className="clear"></div>
               </div>
-              <div className="col-lg-4 col-md-5 sticky-top"></div>
             </div>
           </div>
         </div>
