@@ -21,6 +21,8 @@ function JobListContent() {
     const getAllJob = async () => {
       const getJOBS = await UserApi.getJob({ page, limit: 5, ...searchJobs });
       const allJob = getJOBS.data.jobs;
+      console.log(allJob);
+
       const totalJob = getJOBS.data.total / 5;
       setTotal(Math.ceil(totalJob));
       setAllJobs(allJob);
@@ -108,7 +110,7 @@ function JobListContent() {
                                 <ul>
                                   <li>
                                     <i className="fa fa-map-marker"></i>{" "}
-                                    Sacramento, California
+                                    {item.address}
                                   </li>
                                   <li>
                                     <i className="fa-solid fa-bookmark"></i>{" "}
