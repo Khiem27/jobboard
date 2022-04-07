@@ -47,11 +47,14 @@ function Search() {
             <div className="row">
               <div className="col-lg-4-fix col-md-6">
                 <div className="form-group">
+                  {console.log(searchJobs.title)}
                   <div className="input-group">
                     <input
                       ref={titleRef}
                       type="text"
-                      value={searchJobs.title && `${searchJobs.title}`}
+                      value={
+                        searchJobs.title ? `${searchJobs.title}` : undefined
+                      }
                       className="form-control"
                       placeholder="Job Title, Keywords, or Phrase"
                     />
@@ -69,7 +72,9 @@ function Search() {
                     <input
                       ref={addressRef}
                       type="text"
-                      value={searchJobs.address && `${searchJobs.address}`}
+                      value={
+                        searchJobs.address ? `${searchJobs.address}` : undefined
+                      }
                       className="form-control"
                       placeholder="Address"
                     />
